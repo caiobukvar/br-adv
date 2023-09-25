@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  margin-top: 20px;
+}
