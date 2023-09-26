@@ -1,0 +1,7 @@
+root = true
+
+[*]
+# usa espaço e não caractér de tab
+indent_style = space
+# usa 2 espaços como padrão (não 4)
+indent_size = 2
