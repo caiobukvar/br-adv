@@ -1,5 +1,3 @@
 export default function QuemSomos() {
-  return (
-    <h1>Quem somos</h1>
-  )
+  return <h1>Quem somos</h1>;
 }
