@@ -1,0 +1,15 @@
+.construction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.construction > img {
+  width: 400px;
+  height: 400px;
+}
+
+.construction > h1 {
+  color: rgb(7, 68, 117);
+}
