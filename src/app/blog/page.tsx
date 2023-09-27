@@ -7,8 +7,9 @@ export default function Blog() {
       <UnderConstruction />
       <div className={styles.nav}>
         <a href="/">Início</a>
-        <a href="/quem-somos">Quem Somos</a>
+        <a href="/quem-somos">Quem somos</a>
         <a href="/contato">Contato</a>
+        <a href="/blog">Blog</a>
       </div>
     </main>
   );
