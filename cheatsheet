@@ -1,0 +1,13 @@
+# runs prettier check
+
+npm run lint:check
+
+# runs prettier file fixer
+
+npm run lint:fix
+
+# VSCode settings for Prettier
+
+- formatter -> define as prettier
+- format on save -> on
+- auto save -> off (optional)
