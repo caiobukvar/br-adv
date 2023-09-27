@@ -1,6 +1,4 @@
 import styles from "./page.module.css";
-import Construction from "../assets/images/construction/under-construction.svg";
-import Image from "next/image";
 import UnderConstruction from "@/components/UnderConstruction";
 
 export default function Home() {
