@@ -1,11 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import UnderConstruction from "@/components/UnderConstruction";
+import WorkAreas from "@/components/WorkAreas";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      {/* <UnderConstruction /> */}
       <section className={styles["section__1"]}>
         <div>
           <h1>Escritório de advocacia BR</h1>
@@ -33,6 +33,13 @@ export default function Home() {
           </div>
           <button>Quem é a Dra. Bianca Rocha</button>
         </div>
+      </section>
+
+      <section className={styles["section__3"]}>
+        <div className={styles.sticky}>
+          <h1>Nossas áreas de atuação</h1>
+        </div>
+        <WorkAreas />
       </section>
       <div className={styles.nav}>
         <a href="/">Início</a>

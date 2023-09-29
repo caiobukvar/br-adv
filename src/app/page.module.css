@@ -65,3 +65,16 @@
 .section__2 div span {
   font-style: italic;
 }
+
+.section__3 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  padding: 0 5%;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+}
