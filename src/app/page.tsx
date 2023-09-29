@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import UnderConstruction from "@/components/UnderConstruction";
 import WorkAreas from "@/components/WorkAreas";
+import LangAdvice from "@/components/LangAdvice";
 
 export default function Home() {
   return (
@@ -40,6 +41,11 @@ export default function Home() {
           <h1>Nossas áreas de atuação</h1>
         </div>
         <WorkAreas />
+      </section>
+
+      <section className={styles["section__4"]}>
+        <h1>Assessoria de idiomas</h1>
+        <LangAdvice />
       </section>
       <div className={styles.nav}>
         <a href="/">Início</a>
