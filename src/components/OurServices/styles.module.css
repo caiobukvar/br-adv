@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.container > div {
+  display: flex;
+  gap: 50px;
+}
+
+.container h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  color: #1c244b;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 300px;
+}
+
+.services div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.services > p {
+  font-size: 1.2em;
+  color: #324a6d;
+}
+
+.services div img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.services div p {
+  font-size: 1.2em;
+  font-weight: 600;
+}

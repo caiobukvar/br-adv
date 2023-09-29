@@ -17,11 +17,14 @@
 }
 
 .section__1,
-.section__2 {
+.section__2,
+.section__3,
+.section__4,
+.section__5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 100px;
   width: 100vw;
   height: 100vh;
 }
@@ -30,14 +33,25 @@
 .section__2 div {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   gap: 20px;
+  width: 450px;
 }
 
 .section__1 div h1 {
   text-transform: uppercase;
   font-size: 3.5em;
-  width: 450px;
   color: #1c244b;
+}
+
+.section__1 div button {
+  width: 200px;
+}
+
+.section__2 div h1 {
+  color: #1c244b;
+  font-size: 3em;
+  margin-bottom: -20px;
 }
 
 .s1__subtitle {
@@ -49,14 +63,6 @@
   font-size: 1.5em;
 }
 
-.section__2 div {
-  width: 450px;
-}
-.section__2 div h1 {
-  color: #1c244b;
-  font-size: 3em;
-  line-height: 10px;
-}
 .section__2 div p,
 .section__2 div span {
   color: #324a6d;
@@ -66,25 +72,8 @@
   font-style: italic;
 }
 
-.section__3 {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100vw;
-  height: 100vh;
-  padding: 0 5%;
-}
-
 .sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 50px;
-}
-
-.section__4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
 }
