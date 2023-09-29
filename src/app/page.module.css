@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: center;
   justify-content: space-evenly;
-  padding: 10px;
   min-height: 100vh;
 }
 
@@ -14,15 +13,21 @@
   flex-direction: column;
   gap: 5px;
   align-items: center;
-
   margin-top: 20px;
 }
 
-.section__1 {
+.section__1,
+.section__2 {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100vw;
+  height: 100vh;
 }
 
-.section__1 div {
+.section__1 div,
+.section__2 div {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -42,4 +47,21 @@
   padding-top: 10px;
   color: #ff0000;
   font-size: 1.5em;
+}
+
+.section__2 div {
+  width: 450px;
+}
+.section__2 div h1 {
+  color: #1c244b;
+  font-size: 3em;
+  line-height: 10px;
+}
+.section__2 div p,
+.section__2 div span {
+  color: #324a6d;
+}
+
+.section__2 div span {
+  font-style: italic;
 }
