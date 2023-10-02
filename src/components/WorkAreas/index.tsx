@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Construction from "../../assets/images/construction/under-construction.svg";
 import styles from "./styles.module.css";
-import { Inter, Teko } from "next/font/google";
-const teko = Teko({ subsets: ["latin"] });
+import { Inter, Aleo } from "next/font/google";
+import DImob from "../../../public/work-area-cards/direito-imobiliario.jpg";
+import DIfam from "../../../public/work-area-cards/direito-de-familia.jpg";
+
+const teko = Aleo({ subsets: ["latin"] });
 
 const specs = [
   {
@@ -17,6 +20,7 @@ const specs = [
       "Regularização de imóveis",
       "Usucapião",
     ],
+    img: "/work-area-cards/direito-imobiliario.jpg",
   },
   {
     id: 2,
@@ -31,6 +35,7 @@ const specs = [
       "Partilha de bens",
       "Testamento e inventários",
     ],
+    img: "/work-area-cards/direito-de-familia.jpg",
   },
   {
     id: 3,
@@ -40,6 +45,7 @@ const specs = [
       "Ação de anulação de débito fiscal",
       "Ação de repetição de indébito",
     ],
+    img: "/work-area-cards/direito-tributario.png",
   },
   {
     id: 4,
@@ -49,28 +55,38 @@ const specs = [
       "Implementação de programas de adequação à Lei Geral de Proteção de Dados (LGPD)",
       "Elaboração de código de conduta e implementação de compliance corporativo",
     ],
+    img: "/work-area-cards/direito-empresarial.jpg",
   },
   {
     id: 5,
     title: "Outras áreas do direito",
     items: ["Direito Civil", "Direito Penal", "Direito Trabalhista"],
+    img: "/work-area-cards/outras-areas.jpg",
   },
 ];
 
 export default function WorkAreas() {
   return (
     <div className={teko.className}>
-      {specs.map((spec) => (
-        <div key={spec.id}>
-          <h3>{spec.title}</h3>
-          <ul>
-            {spec.items.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      ))}
-      <Image src="" alt="" />
+      <div className={styles.container}>
+        {specs.map((spec, index) => (
+          <div
+            key={spec.id}
+            className={index % 2 === 0 ? styles.even : styles.odd}
+            id={`${index}`}
+            style={{ backgroundImage: `url(${spec.img})` }}
+          >
+            <div className={styles.list}>
+              <h3>{spec.title}</h3>
+              <ul>
+                {spec.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

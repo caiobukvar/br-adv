@@ -1,4 +1,6 @@
 .main {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 
@@ -18,15 +20,13 @@
 
 .section__1,
 .section__2,
-.section__3,
 .section__4,
 .section__5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .section__1 div,
@@ -72,8 +72,25 @@
   font-style: italic;
 }
 
+.section__3 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 100%;
+}
+
 .sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 50px;
+  top: 300px;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.sticky h1 {
+  text-align: center;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  width: 200px;
+  font-weight: 700;
 }
