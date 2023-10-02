@@ -112,7 +112,6 @@
   background-color: #fff;
   border: 1px solid #00bc24;
   color: #00bc24;
-  transition: 0.5s ease-in-out;
 }
 
 .btn__whatsapp img {
@@ -120,7 +119,6 @@
   top: 50%;
   left: 35%;
   transform: translate(-50%, -50%);
-  transition: all 0.5s ease-in-out;
 }
 
 .btn__whatsapp img.image__white {
