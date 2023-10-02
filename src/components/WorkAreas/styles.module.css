@@ -1,9 +1,17 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 20px;
   border-radius: 10px;
   width: 700px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .even,
@@ -72,4 +80,65 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+/* whatsapp button */
+
+.btn__whatsapp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #00bc24;
+  gap: 5px;
+  width: 200px;
+
+  background-color: #00bc24;
+  border-radius: 25px;
+
+  padding: 10px 6px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+.btn__whatsapp p {
+  margin-left: 30px;
+  margin-top: 2px;
+}
+
+.btn__whatsapp:hover {
+  background-color: #fff;
+  border: 1px solid #00bc24;
+  color: #00bc24;
+  transition: 0.5s ease-in-out;
+}
+
+.btn__whatsapp img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn__whatsapp img.image__white {
+  display: block;
+  z-index: 2;
+}
+
+.btn__whatsapp img.image__green {
+  display: hidden;
+  z-index: 1;
+}
+
+.btn__whatsapp:hover img.image__white {
+  display: hidden;
+  z-index: 1;
+}
+
+.btn__whatsapp:hover img.image__green {
+  display: block;
+  z-index: 2;
 }
