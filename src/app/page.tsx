@@ -1,11 +1,19 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import UnderConstruction from "@/components/UnderConstruction";
 import WorkAreas from "@/components/WorkAreas";
 import LangAdvice from "@/components/LangAdvice";
 import OurServices from "@/components/OurServices";
+import { useEffect } from "react";
 
 export default function Home() {
+  const handleSaibaMaisClick = () => {
+    const element = document.getElementById("section__2");
+
+    element!.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <main className={styles.main}>
       <div className={styles.nav}>
@@ -21,12 +29,14 @@ export default function Home() {
           <div className={styles["s1__subtitle"]}>
             <h3>DIREITO IMOBILIÁRIO</h3>
           </div>
-          <button className="btn__blue">Saiba mais</button>
+          <button className="btn__blue" onClick={() => handleSaibaMaisClick()}>
+            Saiba mais
+          </button>
         </div>
         <Image src="" alt="img-s1" width={450} height={450} />
       </section>
 
-      <section className={styles["section__2"]}>
+      <section className={styles["section__2"]} id="section__2">
         <Image src="" alt="img-s2" width={450} height={450} />
         <div>
           <h1>Dra. Bianca Rocha</h1>

@@ -11,7 +11,12 @@ export default function OurServices() {
           <div key={service.name} className={styles.services}>
             <p>{service.text}</p>
             <div>
-              <Image src={service.img} alt={service.name} />
+              <Image
+                src={service.img}
+                alt={service.name}
+                width={64}
+                height={64}
+              />
               <p>{service.name}</p>
             </div>
           </div>
