@@ -2,10 +2,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import UnderConstruction from "@/components/UnderConstruction";
+import PicCarousel from "@/components/PicCarousel";
 import WorkAreas from "@/components/WorkAreas";
 import LangAdvice from "@/components/LangAdvice";
 import OurServices from "@/components/OurServices";
-import { useEffect } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
   const handleSaibaMaisClick = () => {
@@ -33,7 +35,9 @@ export default function Home() {
             Saiba mais
           </button>
         </div>
-        <Image src="" alt="img-s1" width={450} height={450} />
+        <div>
+          <PicCarousel />
+        </div>
       </section>
 
       <section className={styles["section__2"]} id="section__2">

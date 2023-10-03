@@ -29,12 +29,23 @@
   min-height: 100vh;
 }
 
+.section__1 {
+  gap: 50px;
+}
+
+.section__1 > div {
+  gap: 20px;
+}
+.section__1 div:last-of-type {
+  display: block;
+}
+
 .section__1 div,
 .section__2 div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 20px;
+
   width: 450px;
 }
 
@@ -71,6 +82,9 @@
   color: #324a6d;
 }
 
+.section__2 div {
+  gap: 20px;
+}
 .section__2 div span {
   font-style: italic;
 }

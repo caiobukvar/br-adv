@@ -13,12 +13,15 @@
   "dependencies": {
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@types/react-slick": "^0.23.10",
     "eslint": "latest",
     "eslint-config-next": "latest",
     "prettier": "^3.0.3",
