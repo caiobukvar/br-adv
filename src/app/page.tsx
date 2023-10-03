@@ -1,13 +1,13 @@
 "use client";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import Image from "next/image";
 import styles from "./page.module.css";
-import UnderConstruction from "@/components/UnderConstruction";
-import PicCarousel from "@/components/PicCarousel";
+import PicCarouselOffice from "@/components/PicCarouselOffice";
 import WorkAreas from "@/components/WorkAreas";
 import LangAdvice from "@/components/LangAdvice";
 import OurServices from "@/components/OurServices";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
   const handleSaibaMaisClick = () => {
@@ -35,26 +35,29 @@ export default function Home() {
             Saiba mais
           </button>
         </div>
-        <div>
-          <PicCarousel />
+        <div className={styles.section__1__img}>
+          <PicCarouselOffice />
         </div>
       </section>
 
       <section className={styles["section__2"]} id="section__2">
-        <Image src="" alt="img-s2" width={450} height={450} />
-        <div>
+        <div className={styles.holder} />
+
+        <div className={styles.section__container}>
           <h1>Dra. Bianca Rocha</h1>
           <span>
             <strong>Uma advogada apaixonada pela profissão.</strong>
           </span>
-          <div>
-            <p>Atuo com o mercado imobiliário de forma especializada.</p>
-            <p>
-              Me especializei em toda a parte jurídica que envolve os imóveis,
-              principalmente em contratos e incorporação imobiliária.
-            </p>
-          </div>
-          <button className="btn__blue">Quem é a Dra. Bianca Rocha</button>
+
+          <p>Atuo com o mercado imobiliário de forma especializada.</p>
+          <p>
+            Me especializei em toda a parte jurídica que envolve os imóveis,
+            principalmente em contratos e incorporação imobiliária.
+          </p>
+
+          <a href="/quem-somos" className="btn__blue__nav">
+            Quem é a Dra. Bianca Rocha
+          </a>
         </div>
       </section>
 

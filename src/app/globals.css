@@ -41,4 +41,32 @@ body {
   cursor: pointer;
 }
 
+.btn__blue__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #467ff7;
+  border: 1px solid #467ff7;
 
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+
+  border: none;
+  border-radius: 20px;
+
+  width: 450px;
+  height: 40px;
+
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.btn__blue__nav:hover {
+  background-color: #fff;
+  color: #467ff7;
+  border: 1px solid #467ff7;
+  transition: all 0.6s;
+}

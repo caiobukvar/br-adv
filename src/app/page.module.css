@@ -30,23 +30,41 @@
 }
 
 .section__1 {
-  gap: 50px;
+  justify-content: space-evenly;
 }
 
 .section__1 > div {
   gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
-.section__1 div:last-of-type {
+.section__1__img {
   display: block;
+  height: 500px;
+  transition: all 0.5s ease;
 }
 
 .section__1 div,
 .section__2 div {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
 
-  width: 450px;
+  width: 500px;
+}
+
+.section__2 {
+  gap: 100px;
+}
+
+.section__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section__container h1 {
+  color: #1c244b;
+  font-size: 3em;
+  margin-bottom: -20px;
 }
 
 .section__1 div h1 {
@@ -57,12 +75,6 @@
 
 .section__1 div button {
   width: 200px;
-}
-
-.section__2 div h1 {
-  color: #1c244b;
-  font-size: 3em;
-  margin-bottom: -20px;
 }
 
 .s1__subtitle {
@@ -77,16 +89,25 @@
 #section__2 {
   transition: opacity 0.5s ease-in-out;
 }
+
 .section__2 div p,
 .section__2 div span {
   color: #324a6d;
 }
 
-.section__2 div {
-  gap: 20px;
-}
 .section__2 div span {
   font-style: italic;
+}
+
+.holder {
+  width: 500px;
+  height: 500px;
+  background-image: url("../assets/images/official-pics/bradv/b3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .section__3 {

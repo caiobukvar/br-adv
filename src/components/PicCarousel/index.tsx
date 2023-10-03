@@ -17,7 +17,7 @@ export default function Carousel() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     pauseOnHover: false,
     arrows: false,
     fade: true,
@@ -30,8 +30,8 @@ export default function Carousel() {
           key={index}
           src={image}
           alt={`${image}`}
-          width={400}
-          height={400}
+          width={500}
+          height={500}
         />
       ))}
     </Slider>
