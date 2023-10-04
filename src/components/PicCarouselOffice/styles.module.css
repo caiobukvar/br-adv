@@ -1,6 +1,10 @@
 .carousel {
+  height: 400px;
+  width: 400px;
   border-radius: 12px;
 }
 .carousel img {
   border-radius: 12px;
+  height: 400px;
+  width: 400px;
 }

@@ -29,13 +29,7 @@ export default function CarouselOffice() {
   return (
     <Slider {...settings} className={styles.carousel}>
       {images.map((image, index) => (
-        <Image
-          key={index}
-          src={image}
-          alt={`${index}`}
-          width={500}
-          height={500}
-        />
+        <Image key={index} src={image} alt={`${index}`} />
       ))}
     </Slider>
   );

@@ -72,11 +72,21 @@ export default function Navbar() {
         </div>
 
         <div className={styles.available__languages}>
-          <Icon as={BsFlag} boxSize="24px" />
-          <Icon as={BsFlag} boxSize="24px" />
-          <Icon as={BsFlag} boxSize="24px" />
-          <Icon as={BsFlag} boxSize="24px" />
-          <Icon as={BsFlag} boxSize="24px" />
+          {/* <button>
+            <Icon as={BsFlag} boxSize="24px" />
+          </button>
+          <button>
+            <Icon as={BsFlag} boxSize="24px" />
+          </button>
+          <button>
+            <Icon as={BsFlag} boxSize="24px" />
+          </button>
+          <button>
+            <Icon as={BsFlag} boxSize="24px" />
+          </button>
+          <button>
+            <Icon as={BsFlag} boxSize="24px" />
+          </button> */}
         </div>
       </div>
     </div>
