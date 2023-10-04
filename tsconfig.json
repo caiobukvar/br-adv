@@ -30,6 +30,6 @@
     "src/app/blog/page.tsx",
     "src/app/contato/page.tsx",
     "src/app/quem-somos/page.tsx"
-  ],
+, "src/app/_app.js"  ],
   "exclude": ["node_modules"]
 }
