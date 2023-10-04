@@ -135,6 +135,9 @@
   justify-content: space-evenly;
   width: 100vw;
   height: 100%;
+
+  -webkit-animation: scale-in-center 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) forwards;
+	        animation: scale-in-center 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) forwards;
 }
 
 .sticky {
@@ -238,3 +241,4 @@
     opacity: 1;
   }
 }
+

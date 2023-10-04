@@ -4,6 +4,10 @@
   justify-content: center;
   align-items: center;
   gap: 100px;
+
+  -webkit-animation: scale-in-center 2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards;
+  animation: scale-in-center 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
 .content {
@@ -43,4 +47,34 @@
   box-shadow: 0px 0px 10px 0px rgb(28, 36, 75, 0.9);
   -webkit-box-shadow: 0px 0px 10px 0px rgb(28, 36, 75, 0.9);
   -moz-box-shadow: 0px 0px 10px 0px rgb(28, 36, 75, 0.9);
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-in-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
 }
