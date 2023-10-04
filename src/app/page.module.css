@@ -1,11 +1,11 @@
 .main {
+  position: relative;
+
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
-  justify-content: space-evenly;
-  padding: 10px;
+
   min-height: 100vh;
 }
 
@@ -14,6 +14,230 @@
   flex-direction: column;
   gap: 5px;
   align-items: center;
+}
 
-  margin-top: 20px;
+.section__1,
+.section__2,
+.section__4,
+.section__5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.section__1 {
+  justify-content: space-evenly;
+}
+
+.section__1 > div {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__1 div,
+.section__2 div {
+  display: flex;
+
+  width: 500px;
+}
+
+.section__2 {
+  gap: 100px;
+}
+
+.section__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text__focus {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.section__container h1 {
+  color: #1c244b;
+  font-size: 3em;
+  margin-bottom: -20px;
+}
+
+.section__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slide__in__from__right {
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s
+    both;
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s both;
+}
+.section__1 div h1 {
+  text-transform: uppercase;
+  font-size: 3.5em;
+  color: #1c244b;
+}
+
+.section__1 div button {
+  width: 200px;
+}
+
+.s1__subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-top: 1px solid gray;
+}
+
+.slide__bottom {
+  -webkit-animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
+    both;
+  animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+
+.s1__subtitle h3 {
+  padding-top: 10px;
+  color: #ff0000;
+  font-size: 1.5em;
+}
+
+#section__2 {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.section__2 div p,
+.section__2 div span {
+  color: #324a6d;
+}
+
+.section__2 div span {
+  font-style: italic;
+}
+
+.holder {
+  width: 500px;
+  height: 500px;
+  background-image: url("../assets/images/official-pics/bradv/b3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.section__3 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 100%;
+
+  -webkit-animation: scale-in-center 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards;
+  animation: scale-in-center 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 300px;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.sticky h1 {
+  text-align: center;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  width: 200px;
+  font-weight: 700;
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-in-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

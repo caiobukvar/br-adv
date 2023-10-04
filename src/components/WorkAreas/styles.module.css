@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  width: 700px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.even,
+.odd {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 400px;
+  height: 100%;
+
+  background-color: rgba(15, 42, 83, 0.8);
+}
+
+.odd {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.even .list {
+  padding: 20px 20px 20px 40px;
+
+  border-radius: 10px 0 0 10px;
+}
+
+.odd .list {
+  padding: 20px;
+  align-self: flex-end;
+
+  border-radius: 0 10px 10px 0;
+}
+
+.odd .list ul,
+.odd .list h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.list h3 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.list li {
+  font-size: 1em;
+  max-width: 275px;
+}
+
+.list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* whatsapp button */
+
+.btn__whatsapp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #00bc24;
+  gap: 5px;
+  width: 200px;
+
+  background-color: #00bc24;
+  border-radius: 25px;
+
+  padding: 10px 6px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+.btn__whatsapp p {
+  margin-left: 30px;
+  margin-top: 2px;
+}
+
+.btn__whatsapp:hover {
+  background-color: #fff;
+  border: 1px solid #00bc24;
+  color: #00bc24;
+}
+
+.btn__whatsapp img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.btn__whatsapp img.image__white {
+  display: block;
+  z-index: 2;
+}
+
+.btn__whatsapp img.image__green {
+  display: hidden;
+  z-index: 1;
+}
+
+.btn__whatsapp:hover img.image__white {
+  display: hidden;
+  z-index: 1;
+}
+
+.btn__whatsapp:hover img.image__green {
+  display: block;
+  z-index: 2;
+}
