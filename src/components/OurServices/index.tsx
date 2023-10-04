@@ -5,10 +5,13 @@ import services from "../../services.json";
 export default function OurServices() {
   return (
     <div className={styles.container}>
-      <h1>Nossos serviços</h1>
+      <h1 className={styles.tracking__in__expand}>Nossos serviços</h1>
       <div>
         {services.map((service) => (
-          <div key={service.name} className={styles.services}>
+          <div
+            key={service.name}
+            className={`${styles.services} ${styles.slide__in__bottom}`}
+          >
             <p>{service.text}</p>
             <div>
               <Image

@@ -4,7 +4,10 @@
   justify-content: center;
   align-items: center;
   gap: 100px;
+  height: 100vh;
+}
 
+.scale__in__center {
   -webkit-animation: scale-in-center 2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
     forwards;
   animation: scale-in-center 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
@@ -21,10 +24,11 @@
 }
 
 .container > h1 {
-  font-size: 3em;
+  font-size: 4em;
   text-transform: uppercase;
   color: #1c244b;
 }
+
 .container h2 {
   text-transform: uppercase;
   color: #1c244b;

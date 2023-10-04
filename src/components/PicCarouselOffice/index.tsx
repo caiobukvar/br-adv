@@ -32,7 +32,7 @@ export default function CarouselOffice() {
         <Image
           key={index}
           src={image}
-          alt={`${image}`}
+          alt={`${index}`}
           width={500}
           height={500}
         />

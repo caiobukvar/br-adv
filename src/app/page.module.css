@@ -3,10 +3,9 @@
 
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
-  justify-content: space-evenly;
+
   min-height: 100vh;
 }
 
@@ -15,7 +14,6 @@
   flex-direction: column;
   gap: 5px;
   align-items: center;
-  margin-top: 20px;
 }
 
 .section__1,
@@ -38,11 +36,6 @@
   display: flex;
   flex-direction: column;
 }
-.section__1__img {
-  display: block;
-  height: 500px;
-  transition: all 0.5s ease;
-}
 
 .section__1 div,
 .section__2 div {
@@ -59,7 +52,9 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
 
+.text__focus {
   -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
@@ -74,12 +69,13 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
 
+.slide__in__from__right {
   -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s
     both;
   animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s both;
 }
-
 .section__1 div h1 {
   text-transform: uppercase;
   font-size: 3.5em;
@@ -95,6 +91,9 @@
   flex-direction: column;
   gap: 20px;
   border-top: 1px solid gray;
+}
+
+.slide__bottom {
   -webkit-animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
     both;
   animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
@@ -136,8 +135,9 @@
   width: 100vw;
   height: 100%;
 
-  -webkit-animation: scale-in-center 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) forwards;
-	        animation: scale-in-center 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) forwards;
+  -webkit-animation: scale-in-center 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards;
+  animation: scale-in-center 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
 .sticky {
@@ -241,4 +241,3 @@
     opacity: 1;
   }
 }
-

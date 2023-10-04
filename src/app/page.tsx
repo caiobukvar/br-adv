@@ -28,7 +28,7 @@ export default function Home() {
       <section className={styles["section__1"]}>
         <div>
           <h1>Escritório de advocacia BR</h1>
-          <div className={styles["s1__subtitle"]}>
+          <div className={`${styles.s1__subtitle} ${styles.slide__bottom}`}>
             <h3>DIREITO IMOBILIÁRIO</h3>
             <button
               className="btn__blue"
@@ -46,13 +46,15 @@ export default function Home() {
       <section className={styles["section__2"]} id="section__2">
         <div className={styles.holder} />
 
-        <div className={styles.section__container}>
+        <div className={`${styles.section__container} ${styles.text__focus}`}>
           <h1>Dra. Bianca Rocha</h1>
           <span>
             <strong>Uma advogada apaixonada pela profissão.</strong>
           </span>
 
-          <div className={styles.section__text}>
+          <div
+            className={`${styles.section__text} ${styles.slide__in__from__right}`}
+          >
             <p>Atuo com o mercado imobiliário de forma especializada.</p>
             <p>
               Me especializei em toda a parte jurídica que envolve os imóveis,

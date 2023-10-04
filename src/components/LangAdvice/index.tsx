@@ -16,9 +16,9 @@ const langs = [
 
 export default function LangAdvice() {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} `}>
       <h1>Assessoria de idiomas</h1>
-      <div className={styles.content}>
+      <div className={`${styles.content} ${styles.scale__in__center}`}>
         {langs.map((lang) => (
           <div key={lang.lang} className={styles.item}>
             <Image src={lang.img} alt={lang.lang} />
