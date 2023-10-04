@@ -30,10 +30,13 @@ export default function Home() {
           <h1>Escritório de advocacia BR</h1>
           <div className={styles["s1__subtitle"]}>
             <h3>DIREITO IMOBILIÁRIO</h3>
+            <button
+              className="btn__blue"
+              onClick={() => handleSaibaMaisClick()}
+            >
+              Saiba mais
+            </button>
           </div>
-          <button className="btn__blue" onClick={() => handleSaibaMaisClick()}>
-            Saiba mais
-          </button>
         </div>
         <div className={styles.section__1__img}>
           <PicCarouselOffice />
