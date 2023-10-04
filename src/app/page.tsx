@@ -52,11 +52,13 @@ export default function Home() {
             <strong>Uma advogada apaixonada pela profissão.</strong>
           </span>
 
-          <p>Atuo com o mercado imobiliário de forma especializada.</p>
-          <p>
-            Me especializei em toda a parte jurídica que envolve os imóveis,
-            principalmente em contratos e incorporação imobiliária.
-          </p>
+          <div className={styles.section__text}>
+            <p>Atuo com o mercado imobiliário de forma especializada.</p>
+            <p>
+              Me especializei em toda a parte jurídica que envolve os imóveis,
+              principalmente em contratos e incorporação imobiliária.
+            </p>
+          </div>
 
           <a href="/quem-somos" className="btn__blue__nav">
             Quem é a Dra. Bianca Rocha
