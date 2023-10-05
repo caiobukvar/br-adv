@@ -133,7 +133,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 12px;
-  box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .section__3 {
