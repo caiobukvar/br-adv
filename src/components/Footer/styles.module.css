@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  padding: 20px 0;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  font-size: 1em;
+  gap: 10px;
+}
+
+.address a {
+  text-decoration: none;
+}

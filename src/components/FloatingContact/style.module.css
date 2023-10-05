@@ -1,0 +1,48 @@
+.whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  background-color: #25d366;
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+}
+
+.slide__in__fwd__bottom {
+  -webkit-animation: slide-in-fwd-bottom 1.5s cubic-bezier(0.23, 1, 0.32, 1) 2s
+    both;
+  animation: slide-in-fwd-bottom 1.5s cubic-bezier(0.23, 1, 0.32, 1) 2s both;
+}
+
+/*
+ * ----------------------------------------
+ * animation slide-in-fwd-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-fwd-bottom {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(800px);
+    transform: translateZ(-1400px) translateY(800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-bottom {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(800px);
+    transform: translateZ(-1400px) translateY(800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}

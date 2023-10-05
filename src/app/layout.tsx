@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Chakra } from "../components/Chakra";
+import Footer from "@/components/Footer";
+import FloatingContact from "@/components/FloatingContact";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -21,6 +23,8 @@ export default function RootLayout({
         <Chakra>
           <Navbar />
           {children}
+          <FloatingContact />
+          <Footer />
         </Chakra>
       </body>
     </html>

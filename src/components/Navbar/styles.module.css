@@ -12,20 +12,6 @@
   width: 100%;
 }
 
-.socials {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.socials a {
-  height: 24px;
-  width: 24px;
-}
-
-.socials a:hover,
 .nav a:hover {
   color: #6684af;
   transition: ease 0.5s;

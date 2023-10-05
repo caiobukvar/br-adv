@@ -12,6 +12,7 @@ import {
   BsFlag,
 } from "react-icons/bs";
 import Link from "next/link";
+import Socials from "../Socials";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -19,36 +20,7 @@ export default function Navbar() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.socials}>
-          <Image src="" alt="" />
-          <Link
-            href="https://www.instagram.com/biancarocha.adv/"
-            target="_blank"
-          >
-            <Icon as={AiOutlineInstagram} boxSize="24px" />
-          </Link>
-          <Link href="https://bianca500.jusbrasil.com.br/" target="_blank">
-            <Icon as={BsFillPersonFill} boxSize="24px" />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/bianca-rochav/"
-            target="_blank"
-          >
-            <Icon as={BsLinkedin} boxSize="24px" />
-          </Link>
-          <Link
-            href="https://www.facebook.com/biancarochav.adv"
-            target="_blank"
-          >
-            <Icon as={BsFacebook} boxSize="24px" />
-          </Link>
-          <Link
-            href="https://api.whatsapp.com/send?phone=5519999613496"
-            target="_blank"
-          >
-            <Icon as={MdOutlineWhatsapp} boxSize="24px" />
-          </Link>
-        </div>
+        <Socials />
 
         <div className={styles.nav}>
           <a className={pathname === "/" ? styles.active : ""} href="/">
