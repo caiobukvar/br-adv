@@ -22,7 +22,7 @@ export default function Contato() {
             <h1>Contato</h1>
           </div>
           <FormControl isRequired>
-            <FormLabel htmlFor="name">Assunto</FormLabel>
+            <FormLabel htmlFor="name">Nome</FormLabel>
             <Input
               placeholder="Insira seu nome"
               name="name"
