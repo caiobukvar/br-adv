@@ -84,6 +84,14 @@ export default function Contato() {
           </Button>
         </Stack>
       </div>
+      <Stack
+        direction={["column", "column", "row"]}
+        className={styles.contact}
+        spacing={10}
+      >
+        <p>Atendimento: (19) 9 9961.3496 </p>
+        <p>Sala de Reunião: (19) 99632-7333</p>
+      </Stack>
     </main>
   );
 }
