@@ -27,11 +27,14 @@
   font-size: 4em;
   text-transform: uppercase;
   color: #1c244b;
+  font-weight: 600;
 }
 
 .container h2 {
   text-transform: uppercase;
   color: #1c244b;
+  font-weight: 600;
+  font-size: 1.5em;
 }
 
 .item {
