@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  color: #1c244b;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials a {
+  height: 24px;
+  width: 24px;
+}
+
+.socials a:hover,
+.nav a:hover {
+  color: #6684af;
+  transition: ease 0.5s;
+}
+.active {
+  color: #467ff7;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-weight: 600;
+}
+
+.available__languages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  /* temp */
+  width: 10%;
+}
