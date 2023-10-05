@@ -47,4 +47,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+
+  /* temp */
+  width: 10%;
 }

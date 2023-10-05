@@ -72,7 +72,7 @@ export default function Navbar() {
         </div>
 
         <div className={styles.available__languages}>
-          <button>
+          {/* <button>
             <Icon as={BsFlag} boxSize="24px" />
           </button>
           <button>
@@ -86,7 +86,7 @@ export default function Navbar() {
           </button>
           <button>
             <Icon as={BsFlag} boxSize="24px" />
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
