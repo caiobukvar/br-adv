@@ -30,7 +30,7 @@ export default function Home() {
             elementWithDataset.classList.add("animated");
 
             // Add a callback to remove the classnames after the animation is finished
-            elementWithDataset.addEventListener("animationend", () => {
+            element.addEventListener("animationend", () => {
               elementWithDataset.classList.remove(animationClassname);
               elementWithDataset.classList.remove("animated");
               elementWithDataset.dataset.animated = true;

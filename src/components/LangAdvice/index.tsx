@@ -21,10 +21,11 @@ export default function LangAdvice() {
     const animationObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         const element = entry.target;
-        const animationClassname = element.dataset.animate;
+        const elementWithDataset = element as Element & { dataset: any };
+        const animationClassname = elementWithDataset.dataset.animate;
 
         if (entry.isIntersecting) {
-          element.classList.add(animationClassname);
+          elementWithDataset.classList.add(animationClassname);
         }
       });
     });
