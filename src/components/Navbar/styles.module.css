@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px;
+  padding: 30px 0;
   color: #1c244b;
   width: 100%;
 }

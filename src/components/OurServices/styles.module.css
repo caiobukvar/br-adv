@@ -18,7 +18,7 @@
   font-weight: 600;
 }
 
-.tracking__in__expand {
+.animation__tracking__in__expand {
   -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1)
     0.7s both;
   animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.7s both;
@@ -32,7 +32,7 @@
   overflow: hidden;
 }
 
-.slide__in__bottom {
+.animation__slide__in__bottom {
   -webkit-animation: slide-in-bottom 2s cubic-bezier(0.23, 1, 0.32, 1) both;
   animation: slide-in-bottom 2s cubic-bezier(0.23, 1, 0.32, 1) both;
 }

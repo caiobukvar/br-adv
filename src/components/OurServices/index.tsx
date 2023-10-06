@@ -1,16 +1,49 @@
+"use client";
 import Image from "next/image";
 import styles from "./styles.module.css";
 import services from "../../services.json";
+import { useEffect } from "react";
 
 export default function OurServices() {
+  useEffect(() => {
+    const animationObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const element = entry.target;
+
+        console.log(element);
+        const animationClassname = element.dataset.animate;
+
+        if (entry.isIntersecting) {
+          element.classList.add(animationClassname);
+        }
+      });
+    });
+
+    const animateElements = document.querySelectorAll(`.${styles.animate}`);
+
+    animateElements.forEach((element) => {
+      animationObserver.observe(element);
+    });
+
+    return () => {
+      animationObserver.disconnect();
+    };
+  }, []);
+
   return (
     <div className={styles.container}>
-      <h1 className={styles.tracking__in__expand}>Nossos serviços</h1>
+      <h1
+        className={`${styles.animate}`}
+        data-animate={`${styles.animation__tracking__in__expand}`}
+      >
+        Nossos serviços
+      </h1>
       <div>
         {services.map((service) => (
           <div
             key={service.name}
-            className={`${styles.services} ${styles.slide__in__bottom}`}
+            className={`${styles.services} ${styles.animate}`}
+            data-animate={`${styles.animation__slide__in__bottom}`}
           >
             <p>{service.text}</p>
             <div>

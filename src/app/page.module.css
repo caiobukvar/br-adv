@@ -20,7 +20,6 @@
 
 .section__1 {
   justify-content: space-evenly;
-  margin-top: -150px;
 }
 
 .section__1 > div {
@@ -46,7 +45,7 @@
   gap: 30px;
 }
 
-.text__focus {
+.animation__text__focus {
   -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
@@ -91,7 +90,7 @@
   font-size: 16px;
 }
 
-.slide__bottom {
+.animation__slide__bottom {
   -webkit-animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
     both;
   animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
