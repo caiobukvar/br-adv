@@ -18,17 +18,30 @@ export default function Home() {
   };
 
   useEffect(() => {
-    const animationObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        const element = entry.target;
+    const animationObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const element = entry.target;
+          const elementWithDataset = element as Element & { dataset: any };
+          const animationClassname = elementWithDataset.dataset.animate;
 
-        const animationClassname = element.dataset.animate;
+          if (entry.isIntersecting && !elementWithDataset.dataset.animated) {
+            elementWithDataset.classList.add(animationClassname);
+            elementWithDataset.classList.add("animated");
 
-        if (entry.isIntersecting) {
-          element.classList.add(animationClassname);
-        }
-      });
-    });
+            // Add a callback to remove the classnames after the animation is finished
+            element.addEventListener("animationend", () => {
+              elementWithDataset.classList.remove(animationClassname);
+              elementWithDataset.classList.remove("animated");
+              elementWithDataset.dataset.animated = true;
+            });
+          }
+        });
+      },
+      {
+        threshold: 0,
+      },
+    );
 
     const animateElements = document.querySelectorAll(`.${styles.animate}`);
 
