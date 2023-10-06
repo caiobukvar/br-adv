@@ -21,8 +21,6 @@ export default function LangAdvice() {
     const animationObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         const element = entry.target;
-
-        console.log(element);
         const animationClassname = element.dataset.animate;
 
         if (entry.isIntersecting) {
