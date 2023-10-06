@@ -22,18 +22,18 @@ export default function Home() {
       (entries) => {
         entries.forEach((entry) => {
           const element = entry.target;
+          const elementWithDataset = element as Element & { dataset: any };
+          const animationClassname = elementWithDataset.dataset.animate;
 
-          const animationClassname = element.dataset.animate;
-
-          if (entry.isIntersecting && !element.dataset.animated) {
-            element.classList.add(animationClassname);
-            element.classList.add("animated");
+          if (entry.isIntersecting && !elementWithDataset.dataset.animated) {
+            elementWithDataset.classList.add(animationClassname);
+            elementWithDataset.classList.add("animated");
 
             // Add a callback to remove the classnames after the animation is finished
-            element.addEventListener("animationend", () => {
-              element.classList.remove(animationClassname);
-              element.classList.remove("animated");
-              element.dataset.animated = true;
+            elementWithDataset.addEventListener("animationend", () => {
+              elementWithDataset.classList.remove(animationClassname);
+              elementWithDataset.classList.remove("animated");
+              elementWithDataset.dataset.animated = true;
             });
           }
         });
