@@ -8,6 +8,7 @@ import PicCarouselOffice from "@/components/PicCarouselOffice";
 import WorkAreas from "@/components/WorkAreas";
 import LangAdvice from "@/components/LangAdvice";
 import OurServices from "@/components/OurServices";
+import { useEffect } from "react";
 
 export default function Home() {
   const handleSaibaMaisClick = () => {
@@ -16,12 +17,42 @@ export default function Home() {
     element!.scrollIntoView({ behavior: "smooth" });
   };
 
+  useEffect(() => {
+    const animationObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const element = entry.target;
+
+        const animationClassname = element.dataset.animate;
+
+        if (entry.isIntersecting) {
+          element.classList.add(animationClassname);
+        }
+      });
+    });
+
+    const animateElements = document.querySelectorAll(`.${styles.animate}`);
+
+    animateElements.forEach((element) => {
+      animationObserver.observe(element);
+    });
+
+    return () => {
+      animationObserver.disconnect();
+    };
+  }, []);
+
   return (
     <main className={styles.main}>
-      <section className={styles["section__1"]}>
+      <section
+        className={`${styles.section__1} ${styles.animate}`}
+        data-animate={`${styles.animation__text__focus}`}
+      >
         <div>
           <h1>Escritório de advocacia BR</h1>
-          <div className={`${styles.s1__subtitle} ${styles.slide__bottom}`}>
+          <div
+            className={`${styles.s1__subtitle} ${styles.animate}`}
+            data-animate={`${styles.animation__slide__bottom}`}
+          >
             <h3>DIREITO IMOBILIÁRIO</h3>
             <button
               className="btn__blue"
@@ -39,14 +70,15 @@ export default function Home() {
       <section className={styles["section__2"]} id="section__2">
         <div className={styles.holder} />
 
-        <div className={`${styles.section__container} ${styles.text__focus}`}>
+        <div className={`${styles.section__container}`}>
           <h1>Dra. Bianca Rocha</h1>
           <span>
             <strong>Uma advogada apaixonada pela profissão.</strong>
           </span>
 
           <div
-            className={`${styles.section__text} ${styles.slide__in__from__right}`}
+            className={`${styles.section__text} ${styles.animate}`}
+            data-animate={`${styles.slide__in__from__right}`}
           >
             <p>Atuo com o mercado imobiliário de forma especializada.</p>
             <p>
