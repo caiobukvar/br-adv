@@ -10,7 +10,7 @@ import Link from "next/link";
 export default function Socials() {
   return (
     <div className={styles.socials}>
-      <Image src="" alt="" />
+      {/* <Image src="" alt="logo" /> */}
       <Link href="https://www.instagram.com/biancarocha.adv/" target="_blank">
         <Icon as={AiOutlineInstagram} boxSize="24px" />
       </Link>
