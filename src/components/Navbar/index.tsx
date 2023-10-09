@@ -2,21 +2,17 @@
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import styles from "./styles.module.css";
-import { Icon } from "@chakra-ui/react";
-import { MdOutlineWhatsapp } from "react-icons/md";
-import { AiOutlineInstagram } from "react-icons/ai";
-import {
-  BsFillPersonFill,
-  BsLinkedin,
-  BsFacebook,
-  BsFlag,
-} from "react-icons/bs";
-import Link from "next/link";
+import BR from "../../assets/images/official-pics/flags/BR.svg";
+import FR from "../../assets/images/official-pics/flags/FR.svg";
+import GE from "../../assets/images/official-pics/flags/GE.svg";
+import SP from "../../assets/images/official-pics/flags/SP.svg";
+import US from "../../assets/images/official-pics/flags/US.svg";
 import Socials from "../Socials";
+import { Tag } from "@chakra-ui/react";
 
 export default function Navbar() {
   const pathname = usePathname();
-  
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -44,21 +40,26 @@ export default function Navbar() {
         </div>
 
         <div className={styles.available__languages}>
-          {/* <button>
-            <Icon as={BsFlag} boxSize="24px" />
-          </button>
-          <button>
-            <Icon as={BsFlag} boxSize="24px" />
-          </button>
-          <button>
-            <Icon as={BsFlag} boxSize="24px" />
-          </button>
-          <button>
-            <Icon as={BsFlag} boxSize="24px" />
-          </button>
-          <button>
-            <Icon as={BsFlag} boxSize="24px" />
-          </button> */}
+          <div>
+            <button>
+              <Image src={US} alt="United States" />
+            </button>
+            <button>
+              <Image src={FR} alt="France" />
+            </button>
+            <button>
+              <Image src={GE} alt="Germany" />
+            </button>
+            <button>
+              <Image src={BR} alt="Brazil" />
+            </button>
+            <button>
+              <Image src={SP} alt="Spain" />
+            </button>
+          </div>
+          <Tag borderRadius="full" variant="solid" colorScheme="red">
+            Translations soon!
+          </Tag>
         </div>
       </div>
     </div>
