@@ -30,11 +30,35 @@
 
 .available__languages {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
 
-  /* temp */
-  width: 10%;
+.available__languages div {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.available__languages button {
+  height: 18px;
+  width: 32px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+
+  /* remove after adding i18next */
+  cursor: not-allowed;
+}
+
+.available__languages button img {
+  max-width: inherit;
+  max-height: inherit;
+  width: 100%;
+  height: 100%;
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
 }
