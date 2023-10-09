@@ -48,6 +48,9 @@
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   display: flex;
+
+  /* remove after adding i18next */
+  cursor: not-allowed;
 }
 
 .available__languages button img {
