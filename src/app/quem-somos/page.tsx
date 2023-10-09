@@ -1,6 +1,8 @@
 import UnderConstruction from "@/components/UnderConstruction";
 import styles from "./page.module.css";
 import Link from "next/link";
+import Image from "next/image";
+import OurServices from "@/components/OurServices";
 
 export default function QuemSomos() {
   return (
@@ -46,6 +48,25 @@ export default function QuemSomos() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className={styles.section__2}>
+        <div className={styles.container}>
+          <div className={styles.text__container}>
+            <h1>Práticas de Bianca Rocha Advocacia</h1>
+            <p>
+              Nossos advogados dedicados trazem uma abordagem única para todos
+              os casos. Hoje, trabalhamos com uma série de regulamentos e
+              requisistos. Confira nossas áreas de especialização e ligue para
+              falar sobre suas questões legais hoje mesmo!
+            </p>
+          </div>
+          <div className={styles.image} />
+        </div>
+      </section>
+
+      <section className={styles.section__3}>
+        <OurServices />
       </section>
     </main>
   );
