@@ -2,9 +2,136 @@
   display: flex;
   flex-direction: column;
 
+  min-height: 100vh;
+  gap: 50px;
+}
+
+.section__1 {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
   align-items: center;
   justify-content: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/images/official-pics/bradv/2.jpg");
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  position: absolute;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  color: #fff;
+  font-weight: 400;
+  z-index: 3;
+}
+
+.content h1 {
+  font-size: 4em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.2em;
+}
+
+.content__channels {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  z-index: 3;
+  gap: 20px;
+}
+
+.content__channels div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.content__channels h3 {
+  font-size: 2em;
+  color: #fff;
+}
+
+.content__channels a {
+  color: #c36;
+  font-weight: 600;
+}
+
+.section__2 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__2 .container {
+  display: flex;
   justify-content: space-evenly;
-  padding: 10px;
-  min-height: 100vh;
+  gap: 100px;
+}
+
+.section__2 .container .image {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  background-image: url("../../assets/images/official-pics/bradv/b1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 600px;
+  height: 500px;
+}
+
+.section__2 .text__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  gap: 20px;
+}
+
+.text__container h1 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #1c244b;
+  line-height: 1.2em;
+}
+
+.section__3 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
