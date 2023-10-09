@@ -54,6 +54,7 @@
   font-size: 4em;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .content p {
@@ -66,17 +67,18 @@
   max-width: 800px;
   width: 100%;
   z-index: 3;
+  gap: 20px;
 }
 
 .content__channels div {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 .content__channels h3 {
   font-size: 2em;
   color: #fff;
-  font-weight: 600;
 }
 
 .content__channels a {

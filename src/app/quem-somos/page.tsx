@@ -38,13 +38,30 @@ export default function QuemSomos() {
             <h3>Conheça meus canais de conteúdo:</h3>
 
             <div>
-              <Link href="">Jusbrasil</Link>
+              <Link href="https://bianca500.jusbrasil.com.br" target="_blank">
+                Jusbrasil
+              </Link>
 
-              <Link href="">Whatsapp</Link>
+              <Link
+                href="https://api.whatsapp.com/send?phone=5519999613496"
+                target="_blank"
+              >
+                Whatsapp
+              </Link>
 
-              <Link href="">Facebook</Link>
+              <Link
+                href="https://www.facebook.com/biancarochav.adv"
+                target="_blank"
+              >
+                Facebook
+              </Link>
 
-              <Link href="">Instagram</Link>
+              <Link
+                href="https://www.instagram.com/biancarocha.adv "
+                target="_blank"
+              >
+                Instagram
+              </Link>
             </div>
           </div>
         </div>
