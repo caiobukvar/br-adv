@@ -9,6 +9,7 @@
   position: fixed;
   right: 3%;
   bottom: 5%;
+  z-index: 99;
 }
 
 .slide__in__fwd__bottom {
