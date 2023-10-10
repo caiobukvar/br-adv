@@ -106,7 +106,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles["section__3"]}>
+      <section
+        className={`${styles.section__3} ${styles.animate}`}
+        data-animate={`${styles.animation__scale__in__center}`}
+      >
         <div className={styles.sticky}>
           <h1>Nossas áreas de atuação</h1>
         </div>
