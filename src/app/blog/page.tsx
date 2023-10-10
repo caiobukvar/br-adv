@@ -9,7 +9,8 @@ export default function Blog() {
         <h1>Blog</h1>
       </div>
       <div className={styles.posts}>
-        <BlogPosts />
+        {/* <BlogPosts /> */}
+        <UnderConstruction />
       </div>
     </main>
   );
