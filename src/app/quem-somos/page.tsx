@@ -1,10 +1,46 @@
-import UnderConstruction from "@/components/UnderConstruction";
+"use client";
+import { useEffect } from "react";
 import styles from "./page.module.css";
 import Link from "next/link";
-import Image from "next/image";
 import OurServices from "@/components/OurServices";
 
 export default function QuemSomos() {
+  useEffect(() => {
+    const animationObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const element = entry.target;
+          const elementWithDataset = element as Element & { dataset: any };
+          const animationClassname = elementWithDataset.dataset.animate;
+
+          if (entry.isIntersecting && !elementWithDataset.dataset.animated) {
+            elementWithDataset.classList.add(animationClassname);
+            elementWithDataset.classList.add("animated");
+
+            element.addEventListener("animationend", () => {
+              elementWithDataset.classList.remove(animationClassname);
+              elementWithDataset.classList.remove("animated");
+              elementWithDataset.dataset.animated = true;
+            });
+          }
+        });
+      },
+      {
+        threshold: 0,
+      },
+    );
+
+    const animateElements = document.querySelectorAll(styles.animate);
+
+    animateElements.forEach((element) => {
+      animationObserver.observe(element);
+    });
+
+    return () => {
+      animationObserver.disconnect();
+    };
+  }, []);
+
   return (
     <main className={styles.main}>
       <section className={styles.section__1}>
@@ -69,9 +105,15 @@ export default function QuemSomos() {
 
       <section className={styles.section__2}>
         <div className={styles.container}>
-          <div className={styles.text__container}>
+          <div
+            className={`${styles.text__container} ${styles.animate}`}
+            data-animate={`${styles.animation__text__focus__in}`}
+          >
             <h1>Práticas de Bianca Rocha Advocacia</h1>
-            <p>
+            <p
+              className={`${styles.text} ${styles.animate}`}
+              data-animate={`${styles.animation__slide__bottom}`}
+            >
               Nossos advogados dedicados trazem uma abordagem única para todos
               os casos. Hoje, trabalhamos com uma série de regulamentos e
               requisistos. Confira nossas áreas de especialização e ligue para

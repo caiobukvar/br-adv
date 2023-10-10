@@ -46,11 +46,6 @@
   gap: 30px;
 }
 
-.animation__text__focus {
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
-
 .section__container h1 {
   color: #1c244b;
   font-size: 3em;
@@ -61,12 +56,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.slide__in__from__right {
-  -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s
-    both;
-  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s both;
 }
 
 .section__1 div h1 {
@@ -89,12 +78,6 @@
 
 .s1__subtitle button {
   font-size: 16px;
-}
-
-.animation__slide__bottom {
-  -webkit-animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
-    both;
-  animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
 }
 
 .s1__subtitle h3 {
@@ -138,10 +121,6 @@
 .section__3 {
   display: flex;
   justify-content: space-evenly;
-
-  -webkit-animation: scale-in-center 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-    forwards;
-  animation: scale-in-center 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
 .sticky {
@@ -158,6 +137,29 @@
   text-transform: uppercase;
   width: 250px;
   font-weight: 700;
+}
+
+.animation__text__focus {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slide__in__from__right {
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s
+    both;
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s both;
+}
+
+.animation__slide__bottom {
+  -webkit-animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
+    both;
+  animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+
+.animation__scale__in__center {
+  -webkit-animation: scale-in-center 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards;
+  animation: scale-in-center 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
 /**

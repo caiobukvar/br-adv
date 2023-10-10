@@ -1,14 +1,13 @@
 "use client";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from "react";
 
-import Image from "next/image";
 import styles from "./page.module.css";
 import PicCarouselOffice from "@/components/PicCarouselOffice";
 import WorkAreas from "@/components/WorkAreas";
 import LangAdvice from "@/components/LangAdvice";
 import OurServices from "@/components/OurServices";
-import { useEffect } from "react";
 
 export default function Home() {
   const handleSaibaMaisClick = () => {
@@ -29,7 +28,6 @@ export default function Home() {
             elementWithDataset.classList.add(animationClassname);
             elementWithDataset.classList.add("animated");
 
-            // Add a callback to remove the classnames after the animation is finished
             element.addEventListener("animationend", () => {
               elementWithDataset.classList.remove(animationClassname);
               elementWithDataset.classList.remove("animated");
@@ -43,7 +41,7 @@ export default function Home() {
       },
     );
 
-    const animateElements = document.querySelectorAll(`.${styles.animate}`);
+    const animateElements = document.querySelectorAll(styles.animate);
 
     animateElements.forEach((element) => {
       animationObserver.observe(element);
@@ -106,7 +104,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles["section__3"]}>
+      <section
+        className={`${styles.section__3} ${styles.animate}`}
+        data-animate={`${styles.animation__scale__in__center}`}
+      >
         <div className={styles.sticky}>
           <h1>Nossas áreas de atuação</h1>
         </div>

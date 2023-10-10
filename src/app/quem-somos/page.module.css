@@ -47,7 +47,7 @@
   max-width: 800px;
   color: #fff;
   font-weight: 400;
-  z-index: 3;
+  z-index: 2;
 }
 
 .content h1 {
@@ -95,13 +95,7 @@
   align-items: center;
 }
 
-.section__2 .container {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 100px;
-}
-
-.section__2 .container .image {
+.image {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 12px;
   background-image: url("../../assets/images/official-pics/bradv/b1.jpg");
@@ -112,13 +106,13 @@
   height: 500px;
 }
 
-.section__2 .text__container {
+.container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  gap: 20px;
+  width: 100%;
+  gap: 50px;
 }
 
 .text__container h1 {
@@ -126,6 +120,18 @@
   font-weight: 700;
   color: #1c244b;
   line-height: 1.2em;
+  width: 500px;
+}
+
+.text__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.text {
+  max-width: 400px;
+  align-self: flex-start;
 }
 
 .section__3 {
@@ -134,4 +140,71 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.animation__text__focus__in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.animation__slide__bottom {
+  -webkit-animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
+    both;
+  animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
