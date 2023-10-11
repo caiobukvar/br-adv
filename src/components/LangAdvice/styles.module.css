@@ -18,10 +18,11 @@
 }
 
 .container > h1 {
-  font-size: 3em;
-  text-transform: uppercase;
   color: #1c244b;
+  font-size: 3em;
   font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .container h2 {
@@ -50,9 +51,11 @@
   -moz-box-shadow: 0px 0px 10px 0px rgb(28, 36, 75, 0.9);
 }
 
-
-
-
+@media (max-width: 768px) {
+  .container > h1 {
+    font-size: 2.5em;
+  }
+}
 
 .scale__in__center {
   -webkit-animation: scale-in-center 2s cubic-bezier(0.175, 0.885, 0.32, 1.275)

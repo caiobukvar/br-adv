@@ -24,3 +24,15 @@
 .address a {
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 30px;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
