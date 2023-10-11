@@ -52,7 +52,7 @@
 }
 
 .odd .list {
-  padding: 20px;
+  padding: 20px 20px 20px 40px;
   align-self: flex-end;
 
   border-radius: 0 10px 10px 0;
@@ -78,6 +78,43 @@
 .list ul {
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    align-items: center;
+    width: 100%;
+  }
+
+  .wrapper {
+    border-radius: 12px;
+    align-items: center;
+    width: 100%;
+    max-width: 80%;
+  }
+
+  .wrapper div {
+    background-image: unset;
+    border-radius: 12px !important;
+  }
+
+  .even,
+  .odd {
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .list {
+    width: 100%;
+  }
+
+  .odd .list ul,
+  .odd .list h3 {
+    align-items: flex-start;
+    text-align: left;
+  }
 }
 
 /* whatsapp button */
