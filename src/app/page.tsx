@@ -58,7 +58,7 @@ export default function Home() {
         className={`${styles.section__1} ${styles.animate}`}
         data-animate={`${styles.animation__text__focus}`}
       >
-        <div>
+        <div className={styles.container}>
           <h1>Escritório de advocacia BR</h1>
           <div
             className={`${styles.s1__subtitle} ${styles.animate}`}
