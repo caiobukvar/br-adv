@@ -95,6 +95,9 @@
   .container > h1 {
     font-size: 2.5em;
   }
+  .container {
+    gap: 50px;
+  }
 }
 
 .animation__tracking__in__expand {

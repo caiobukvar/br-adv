@@ -29,7 +29,12 @@ export default function CarouselOffice() {
   return (
     <Slider {...settings} className={styles.carousel}>
       {images.map((image, index) => (
-        <Image key={index} src={image} alt={`${index}`} />
+        <Image
+          key={index}
+          src={image}
+          alt={`${index}`}
+          style={{ objectFit: "cover" }}
+        />
       ))}
     </Slider>
   );
