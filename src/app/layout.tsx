@@ -6,6 +6,7 @@ import { Chakra } from "../components/Chakra";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
 import { Analytics } from "@vercel/analytics/react";
+import NavbarMobile from "@/components/NavbarMobile";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Chakra>
           <Navbar />
+          <NavbarMobile />
           {children}
           <FloatingContact />
           <Footer />

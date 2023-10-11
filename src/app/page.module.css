@@ -222,19 +222,33 @@
   }
 
   .sticky h1 {
-    text-align: center;
-    font-size: 2.5em;
-    text-transform: uppercase;
     width: 100%;
     max-width: 80%;
     margin: 30px auto;
+
+    font-size: 2.5em;
+    text-transform: uppercase;
     font-weight: 700;
+    text-align: center;
+  }
+
+  .section__container {
+    width: 100%;
+    max-width: 80%;
+  }
+
+  .section__container a {
+    width: 100%;
   }
 }
 
 /* mobile */
 @media (max-width: 768px) {
-  /* ! fix navbar first */
+  .section__1 div h1,
+  .section__container h1,
+  .sticky h1 {
+    font-size: 2.5em;
+  }
 }
 
 .animation__text__focus {

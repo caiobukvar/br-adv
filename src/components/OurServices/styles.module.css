@@ -17,6 +17,7 @@
   text-transform: uppercase;
   color: #1c244b;
   font-weight: 600;
+  text-align: center;
 }
 
 .services {
@@ -87,6 +88,12 @@
   .services div img {
     width: 48px;
     height: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container > h1 {
+    font-size: 2.5em;
   }
 }
 
