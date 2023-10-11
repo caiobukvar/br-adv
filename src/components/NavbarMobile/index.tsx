@@ -47,7 +47,7 @@ export default function NavbarMobile() {
           <DrawerBody className={styles.content}>
             <div className={styles.nav}>
               <Link href="/">Início</Link>
-              <Link href="/quem-somos">Quem somos</Link>
+              <Link href="/quem-somos">Quem Somos</Link>
               <Link href="/contato">Contato</Link>
               <Link href="/blog">Blog</Link>
             </div>
