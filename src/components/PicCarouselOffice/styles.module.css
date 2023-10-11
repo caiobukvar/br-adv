@@ -8,3 +8,17 @@
   height: 400px;
   width: 500px;
 }
+
+@media (max-width: 1440px) {
+  .carousel {
+    height: 500px;
+    max-width: 100vw;
+    border-radius: 0;
+  }
+
+  .carousel img {
+    height: 500px;
+    width: 100vw;
+    border-radius: 0;
+  }
+}
