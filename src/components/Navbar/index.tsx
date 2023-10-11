@@ -7,6 +7,7 @@ import FR from "../../assets/images/official-pics/flags/FR.svg";
 import GE from "../../assets/images/official-pics/flags/GE.svg";
 import SP from "../../assets/images/official-pics/flags/SP.svg";
 import US from "../../assets/images/official-pics/flags/US.svg";
+import BRAdvLogo from "../../assets/images/official-pics/bradv/logobradv.png";
 import Socials from "../Socials";
 import { Tag } from "@chakra-ui/react";
 
@@ -16,6 +17,7 @@ export default function Navbar() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
+        <Image src={BRAdvLogo} alt="logo" width={64} height={64} />
         <Socials />
 
         <div className={styles.nav}>
