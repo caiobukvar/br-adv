@@ -136,40 +136,45 @@
 }
 
 /* desktop */
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
   /* section 1 */
-  .section__1 {
-    flex-direction: column-reverse;
-    gap: 30px;
+  .section__1,
+  .section__2 {
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 0;
   }
 
   .section__1 > div {
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .section__1 div,
   .section__2 div {
     width: 100%;
   }
+  .section__1 {
+    padding: 0 20px;
+  }
 
   .section__1 div h1 {
     width: 100%;
-    max-width: 80%;
+    max-width: 100%;
     font-size: 3em;
     text-align: left;
   }
 
   .s1__subtitle {
-    max-width: 100%;
-    max-width: 80%;
+    width: 100%;
+    max-width: 400px;
+    align-self: flex-start;
   }
 
   .section__1__img {
     width: 100%;
-    border-radius: 0;
-    box-shadow: unset;
-    height: 500px;
+    height: 100%;
   }
 
   /* section 2 */
@@ -180,13 +185,10 @@
   .holder {
     width: 100%;
     height: 500px;
-    border-radius: 0;
-    box-shadow: unset;
   }
 
   .section__container {
     justify-content: center;
-    align-items: center;
     align-self: center;
     width: 100vw;
     max-width: 450px;
@@ -195,18 +197,30 @@
   }
 
   .section__text {
-    max-width: 500px;
+    max-width: 80%;
   }
 }
 
 /* tablet */
 @media (max-width: 1024px) {
-  .section__1,
-  .section__2,
+  .section__1 > div {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .section__2 {
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 50px;
+    padding: 0 20px;
+  }
+
   .section__4,
   .section__5 {
     gap: 50px;
   }
+
   .section__3 {
     flex-direction: column;
     margin-top: 30px;
@@ -234,16 +248,32 @@
 
   .section__container {
     width: 100%;
-    max-width: 80%;
+    max-width: 100%;
+    text-align: center;
   }
 
   .section__container a {
+    width: 60%;
+    align-self: center;
+  }
+
+  .section__1__img {
     width: 100%;
+    height: 100%;
+  }
+  .section__text {
+    max-width: 60%;
+    align-self: center;
   }
 }
 
 /* mobile */
 @media (max-width: 768px) {
+  /* section 1 */
+  .section__1 {
+    flex-direction: column-reverse;
+  }
+
   .section__1 div h1,
   .section__container h1,
   .sticky h1 {
