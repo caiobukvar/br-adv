@@ -26,6 +26,7 @@ import BRAdvLogo from "../../assets/images/official-pics/bradv/logobradv.png";
 import Socials from "../Socials";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import Link from "next/link";
+import SocialsInverted from "../SocialsInverted";
 
 export default function NavbarMobile() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -40,7 +41,7 @@ export default function NavbarMobile() {
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth="1px" color="#1c244b">
+          <DrawerHeader borderBottomWidth="1px" color="#1c244b" gap={10}>
             Bianca Rocha Advocacia
           </DrawerHeader>
           <DrawerBody className={styles.content}>
@@ -69,13 +70,19 @@ export default function NavbarMobile() {
                   <Image src={SP} alt="Spain" />
                 </button>
               </div>
-              <Tag borderRadius="full" variant="solid" colorScheme="red">
+              {/* <Tag borderRadius="full" variant="solid" colorScheme="red">
                 Translations soon!
-              </Tag>
+              </Tag> */}
             </div>
           </DrawerBody>
-          <DrawerFooter borderTopWidth="1px">
-            <Socials />
+
+          <DrawerFooter
+            borderTopWidth="1px"
+            w="100%"
+            justifyContent={"center"}
+            bgColor="#1c244b"
+          >
+            <SocialsInverted />
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
