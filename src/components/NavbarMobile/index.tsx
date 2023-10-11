@@ -31,6 +31,9 @@ import SocialsInverted from "../SocialsInverted";
 export default function NavbarMobile() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  const onClickWithTimeout = () => {
+    setTimeout(onClose, 200);
+  };
   return (
     <div className={styles.container}>
       <Button colorScheme="blue" onClick={onOpen} backgroundColor="#1c244b">
@@ -46,10 +49,18 @@ export default function NavbarMobile() {
           </DrawerHeader>
           <DrawerBody className={styles.content}>
             <div className={styles.nav}>
-              <Link href="/">Início</Link>
-              <Link href="/quem-somos">Quem Somos</Link>
-              <Link href="/contato">Contato</Link>
-              <Link href="/blog">Blog</Link>
+              <Link href="/" onClick={onClickWithTimeout}>
+                Início
+              </Link>
+              <Link href="/quem-somos" onClick={onClickWithTimeout}>
+                Quem Somos
+              </Link>
+              <Link href="/contato" onClick={onClickWithTimeout}>
+                Contato
+              </Link>
+              <Link href="/blog" onClick={onClickWithTimeout}>
+                Blog
+              </Link>
             </div>
 
             <div className={styles.available__languages}>
