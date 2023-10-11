@@ -67,6 +67,29 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .services {
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .services div {
+    flex-direction: row;
+  }
+  .services div img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
 .animation__tracking__in__expand {
   -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1)
     0.7s both;
