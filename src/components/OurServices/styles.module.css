@@ -8,33 +8,23 @@
 
 .container > div {
   display: flex;
+  max-width: 80%;
   gap: 50px;
 }
 
 .container h1 {
-  font-size: 4em;
+  font-size: 3em;
   text-transform: uppercase;
   color: #1c244b;
   font-weight: 600;
-}
-
-.animation__tracking__in__expand {
-  -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1)
-    0.7s both;
-  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.7s both;
 }
 
 .services {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  width: 300px;
+  width: 100%;
   overflow: hidden;
-}
-
-.animation__slide__in__bottom {
-  -webkit-animation: slide-in-bottom 2s cubic-bezier(0.23, 1, 0.32, 1) both;
-  animation: slide-in-bottom 2s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 .services div {
@@ -59,11 +49,40 @@
   font-weight: 600;
 }
 
+@media (max-width: 1440px) {
+  .services {
+    width: 300px;
+  }
+
+  .services > p {
+    font-size: 1em;
+    color: #324a6d;
+  }
+  .services div p {
+    font-size: 1em;
+  }
+
+  .container h1 {
+    font-size: 3em;
+  }
+}
+
+.animation__tracking__in__expand {
+  -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+    0.7s both;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.7s both;
+}
+
+.animation__slide__in__bottom {
+  -webkit-animation: slide-in-bottom 2s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: slide-in-bottom 2s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
 /**
- * ----------------------------------------
- * animation tracking-in-expand
- * ----------------------------------------
- */
+* ----------------------------------------
+* animation tracking-in-expand
+* ----------------------------------------
+*/
 @-webkit-keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
