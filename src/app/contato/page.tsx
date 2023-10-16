@@ -1,4 +1,5 @@
 /* eslint-disable react/no-children-prop */
+import Maps from "@/components/Maps";
 import styles from "./page.module.css";
 import {
   Button,
@@ -84,6 +85,7 @@ export default function Contato() {
           </Button>
         </Stack>
       </div>
+      <Maps />
       <Stack
         direction={["column", "column", "row"]}
         className={styles.contact}
