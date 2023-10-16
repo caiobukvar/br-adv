@@ -30,6 +30,6 @@
     "src/app/blog/page.tsx",
     "src/app/contato/page.tsx",
     "src/app/quem-somos/page.tsx"
-, "src/app/_app.js"  ],
+, "src/app/_app.js", "src/components/Maps/index.tsx"  ],
   "exclude": ["node_modules"]
 }

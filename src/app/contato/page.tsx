@@ -12,6 +12,7 @@ import {
   Textarea,
   background,
 } from "@chakra-ui/react";
+import Maps from "@/components/Maps";
 
 export default function Contato() {
   return (
@@ -91,6 +92,7 @@ export default function Contato() {
       >
         <p>Atendimento: (19) 9 9961.3496 </p>
       </Stack>
+      <Maps />
     </main>
   );
 }
