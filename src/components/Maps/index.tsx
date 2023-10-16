@@ -5,6 +5,7 @@ import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 const containerStyle = {
   width: "100vw",
   height: "500px",
+  minHeight: "500px",
 };
 
 const center = {
@@ -15,7 +16,7 @@ const center = {
 function MyComponent() {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyCRA3A4QFrVfuGGYkFoMx2Pq98QR8x-w2U",
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY as string,
   });
 
   return isLoaded ? (
