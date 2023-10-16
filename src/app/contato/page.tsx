@@ -85,7 +85,6 @@ export default function Contato() {
           </Button>
         </Stack>
       </div>
-      <Maps />
       <Stack
         direction={["column", "column", "row"]}
         className={styles.contact}
@@ -93,6 +92,7 @@ export default function Contato() {
       >
         <p>Atendimento: (19) 9 9961.3496 </p>
       </Stack>
+      <Maps />
     </main>
   );
 }
