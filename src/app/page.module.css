@@ -32,9 +32,11 @@
 
 .section__1 div h1 {
   text-transform: uppercase;
+  text-align: flex-start;
   font-size: 3em;
   font-weight: 600;
   color: #1c244b;
+  width: 100%;
 }
 
 .section__1 div button {
@@ -82,6 +84,8 @@
   font-size: 3em;
   margin-bottom: -20px;
   font-weight: 600;
+  text-align: flex-start;
+  width: 100%;
 }
 
 .section__text {
@@ -93,6 +97,8 @@
 .section__2 div p,
 .section__2 div span {
   color: #324a6d;
+  text-align: flex-start;
+  width: 100%;
 }
 
 .section__2 div span {

@@ -13,8 +13,7 @@ import {
   Tag,
   useDisclosure,
 } from "@chakra-ui/react";
-
-import { usePathname } from "next/navigation";
+import i18n from "../../app/i18n";
 import Image from "next/image";
 import styles from "./styles.module.css";
 import BR from "../../assets/images/official-pics/flags/BR.svg";
@@ -27,9 +26,17 @@ import Socials from "../Socials";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import SocialsInverted from "../SocialsInverted";
+import { useState } from "react";
 
 export default function NavbarMobile() {
+  const [language, setLanguage] = useState("pt");
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const handleChangeLanguage = (value: string) => {
+    setLanguage(value);
+    i18n.changeLanguage(value);
+    setTimeout(onClose, 200);
+  };
 
   const onClickWithTimeout = () => {
     setTimeout(onClose, 200);
@@ -65,19 +72,19 @@ export default function NavbarMobile() {
 
             <div className={styles.available__languages}>
               <div>
-                <button>
-                  <Image src={US} alt="United States" />
-                </button>
-                <button>
-                  <Image src={FR} alt="France" />
-                </button>
-                <button>
-                  <Image src={GE} alt="Germany" />
-                </button>
-                <button>
+                <button onClick={() => handleChangeLanguage("pt")}>
                   <Image src={BR} alt="Brazil" />
                 </button>
-                <button>
+                <button onClick={() => handleChangeLanguage("en")}>
+                  <Image src={US} alt="United States" />
+                </button>
+                <button onClick={() => handleChangeLanguage("fr")}>
+                  <Image src={FR} alt="France" />
+                </button>
+                <button onClick={() => handleChangeLanguage("de")}>
+                  <Image src={GE} alt="Germany" />
+                </button>
+                <button onClick={() => handleChangeLanguage("es")}>
                   <Image src={SP} alt="Spain" />
                 </button>
               </div>

@@ -55,7 +55,7 @@
   display: flex;
 
   /* remove after adding i18next */
-  cursor: not-allowed;
+  cursor: pointer;
 }
 
 .available__languages button img {

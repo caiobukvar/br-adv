@@ -1,6 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import i18n from "../../app/i18n";
 import styles from "./styles.module.css";
 import BR from "../../assets/images/official-pics/flags/BR.svg";
 import FR from "../../assets/images/official-pics/flags/FR.svg";
@@ -10,9 +11,16 @@ import US from "../../assets/images/official-pics/flags/US.svg";
 import BRAdvLogo from "../../assets/images/official-pics/bradv/logobradv.png";
 import Socials from "../Socials";
 import { Tag } from "@chakra-ui/react";
+import { useState } from "react";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [language, setLanguage] = useState("pt");
+
+  const handleChangeLanguage = (value: string) => {
+    setLanguage(value);
+    i18n.changeLanguage(value);
+  };
 
   return (
     <div className={styles.container}>
@@ -43,19 +51,19 @@ export default function Navbar() {
 
         <div className={styles.available__languages}>
           <div>
-            <button>
-              <Image src={US} alt="United States" />
-            </button>
-            <button>
-              <Image src={FR} alt="France" />
-            </button>
-            <button>
-              <Image src={GE} alt="Germany" />
-            </button>
-            <button>
+            <button onClick={() => handleChangeLanguage("pt")}>
               <Image src={BR} alt="Brazil" />
             </button>
-            <button>
+            <button onClick={() => handleChangeLanguage("en")}>
+              <Image src={US} alt="United States" />
+            </button>
+            <button onClick={() => handleChangeLanguage("fr")}>
+              <Image src={FR} alt="France" />
+            </button>
+            <button onClick={() => handleChangeLanguage("de")}>
+              <Image src={GE} alt="Germany" />
+            </button>
+            <button onClick={() => handleChangeLanguage("es")}>
               <Image src={SP} alt="Spain" />
             </button>
           </div>
