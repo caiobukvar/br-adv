@@ -78,7 +78,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles["section__2"]} id="section__2">
+      <section className={styles.section__2} id="section__2">
         <div className={styles.holder} />
 
         <div className={`${styles.section__container}`}>
@@ -89,7 +89,7 @@ export default function Home() {
 
           <div
             className={`${styles.section__text} ${styles.animate}`}
-            data-animate={`${styles.slide__in__from__right}`}
+            data-animate={`${styles.animation__slide__bottom}`}
           >
             <p>Atuo com o mercado imobiliário de forma especializada.</p>
             <p>
