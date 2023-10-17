@@ -78,7 +78,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles["section__2"]} id="section__2">
+      <section className={styles.section__2} id="section__2">
         <div className={styles.holder} />
 
         <div className={`${styles.section__container}`}>
