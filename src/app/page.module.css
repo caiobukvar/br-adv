@@ -7,7 +7,15 @@
   justify-content: center;
 }
 
-.section__1,
+.section__1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 140px);
+  gap: 100px;
+}
+
 .section__2,
 .section__4,
 .section__5 {
