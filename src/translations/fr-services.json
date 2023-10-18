@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Plaidoyer Extrajudiciaire",
+    "text": "Bianca Rocha Advocacia est un cabinet d'avocats complet, toujours à la recherche d'une solution rapide aux problèmes, permettant ainsi au client de gagner du temps et d'augmenter sa satisfaction quant à la résolution.",
+    "img": "/services-img/extrajudicial.jpg"
+  },
+  {
+    "name": "Droit De La Famille Et Des Successions",
+    "text": "Approche personnalisée de chaque cas, expérience des divorces judiciaires et extrajudiciaires, des inventaires, des procédures de garde, etc.",
+    "img": "/services-img/dirfam.jpg"
+  },
+  {
+    "name": "Conseils",
+    "text": "Conseil spécialisé dans les processus liés au droit immobilier, avec préparation et révision des contrats, analyse des risques d'achat et de vente, possession acquisitive, actions dépossessions, etc.",
+    "img": "/services-img/consultorias.jpg"
+  }
+]

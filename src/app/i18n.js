@@ -14,7 +14,13 @@ const resources = {
         s2_text2:
           "Me especializei em toda a parte jurídica que envolve os imóveis, principalmente em contratos e incorporação imobiliária.",
         s2_button: "Quem é a Dra. Bianca Rocha",
+      },
+      areas: {
         s3_title: "NOSSAS ÁREAS DE ATUAÇÃO",
+        s3_button: "Contato",
+      },
+      services: {
+        s5_card_title: "Nossos serviços",
       },
     },
   },
@@ -30,7 +36,13 @@ const resources = {
         s2_text2:
           "I specialized in all legal aspects involving real estate, mainly in contracts and real estate development.",
         s2_button: "Who Is Doctor Bianca Rocha",
+      },
+      areas: {
         s3_title: "OUR AREAS OF ACTIVITY",
+        s3_button: "Contact",
+      },
+      services: {
+        s5_card_title: "Our services",
       },
     },
   },
@@ -47,7 +59,13 @@ const resources = {
         s2_text2:
           "Je me suis spécialisé dans tous les aspects juridiques liés à l'immobilier, principalement dans les contrats et la promotion immobilière.",
         s2_button: "Qui est le docteur Bianca Rocha",
+      },
+      areas: {
         s3_title: "NOS DOMAINES D'ACTIVITÉ",
+        s3_button: "Contact",
+      },
+      services: {
+        s5_card_title: "NOS SERVICES",
       },
     },
   },
@@ -63,7 +81,13 @@ const resources = {
         s2_text2:
           "Ich habe mich auf alle rechtlichen Aspekte im Zusammenhang mit Immobilien spezialisiert, hauptsächlich auf Verträge und Immobilienentwicklung.",
         s2_button: "Wer ist Doktor Bianca Rocha",
+      },
+      areas: {
         s3_title: "UNSERE TÄTIGKEITSBEREICHE",
+        s3_button: "Kontakt",
+      },
+      services: {
+        s5_card_title: "UNSERE DIENSTLEISTUNGEN",
       },
     },
   },
@@ -79,7 +103,13 @@ const resources = {
         s2_text2:
           "Me especialicé en todos los aspectos jurídicos relacionados con el sector inmobiliario, principalmente en contratos y desarrollo inmobiliario.",
         s2_button: "¿Quién es la doctora Bianca Rocha",
+      },
+      areas: {
         s3_title: "NUESTRAS ÁREAS DE ACTIVIDAD",
+        s3_button: "Contacto",
+      },
+      services: {
+        s5_card_title: "NUESTROS SERVICIOS",
       },
     },
   },

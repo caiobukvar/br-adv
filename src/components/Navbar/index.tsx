@@ -67,9 +67,6 @@ export default function Navbar() {
               <Image src={SP} alt="Spain" />
             </button>
           </div>
-          <Tag borderRadius="full" variant="solid" colorScheme="red">
-            Translations soon!
-          </Tag>
         </div>
       </div>
     </div>

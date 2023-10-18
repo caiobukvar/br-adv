@@ -11,7 +11,7 @@ import OurServices from "@/components/OurServices";
 import { useTranslation } from "react-i18next";
 
 export default function Home() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const handleSaibaMaisClick = () => {
     const element = document.getElementById("section__2");
@@ -109,7 +109,7 @@ export default function Home() {
         data-animate={`${styles.animation__scale__in__center}`}
       >
         <div className={styles.sticky}>
-          <h1>{t("home.s3_title")}</h1>
+          <h1>{t("areas.s3_title")}</h1>
         </div>
         <WorkAreas />
       </section>

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "DERECHO INMOBILIARIO",
+    "items": [
+      "Asesoramiento para la adquisición de propiedades y arrendamientos (Due Diligence)",
+      "Desarrollos Inmobiliarios",
+      "Subdivisiones de Lotes y Condominios",
+      "Arrendamientos",
+      "Contratos inmobiliarios",
+      "Regularización de propiedades",
+      "Posesión adversa"
+    ],
+    "img": "/work-area-cards/direito-imobiliario.jpg",
+    "link": "https://api.whatsapp.com/send/?phone=5519999613496&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+direito+imobili%C3%A1rio&type=phone_number&app_absent=0"
+  },
+  {
+    "id": 2,
+    "title": "DERECHO DE FAMILIA",
+    "items": [
+      "Matrimonio y planificación matrimonial",
+      "Separación y divorcio",
+      "Custodia de los hijos",
+      "Pensión alimenticia",
+      "Adopción",
+      "Reconocimiento de unión estable",
+      "Reparto de bienes",
+      "Testamentos e inventarios"
+    ],
+    "img": "/work-area-cards/direito-de-familia.jpg",
+    "link": "https://api.whatsapp.com/send/?phone=5519999613496&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+direito+de+fam%C3%ADlia&type=phone_number&app_absent=0"
+  },
+  {
+    "id": 3,
+    "title": "DERECHO TRIBUTARIO",
+    "items": [
+      "Acción declaratoria",
+      "Acción de cancelación de deuda tributaria",
+      "Acciones de recuperación de deudas indebidas"
+    ],
+    "img": "/work-area-cards/direito-tributario.png",
+    "link": "https://api.whatsapp.com/send/?phone=5519999613496&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+direito+tribut%C3%A1rio&type=phone_number&app_absent=0"
+  },
+  {
+    "id": 4,
+    "title": "DERECHO MERCANTIL Y CORPORATIVO",
+    "items": [
+      "Actuación similar a un abogado interno, con asesoramiento jurídico completo",
+      "Implementación de programas para el cumplimiento de la Ley General de Protección de Datos",
+      "Elaboración de código de conducta e implementación de cumplimiento corporativo"
+    ],
+    "img": "/work-area-cards/direito-empresarial.jpg",
+    "link": "https://api.whatsapp.com/send/?phone=5519999613496&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+direito+empresarial%2Fcorporativo&type=phone_number&app_absent=0"
+  },
+  {
+    "id": 5,
+    "title": "OTRAS ÁREAS DEL DERECHO",
+    "items": ["Derecho Civil", "Derecho Penal", "Derecho Laboral"],
+    "img": "/work-area-cards/outras-areas.jpg",
+    "link": "https://api.whatsapp.com/send/?phone=5519999613496&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+outras+%C3%A1reas+do+direito&type=phone_number&app_absent=0"
+  }
+]

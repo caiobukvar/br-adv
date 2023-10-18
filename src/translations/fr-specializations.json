@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "DROIT IMMOBILIER",
+    "items": [
+      "Conseils pour l'acquisition de propriétés et de baux (Due Diligence)",
+      "Développements immobiliers",
+      "Lotissements et copropriétés",
+      "Baux",
+      "Contrats immobiliers",
+      "Régularisation de propriété",
+      "Possession adverse"
+    ],
+    "img": "/work-area-cards/direito-imobiliario.jpg",
+    "link": "https://api.whatsapp.com/send/?phone=5519999613496&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+direito+imobili%C3%A1rio&type=phone_number&app_absent=0"
+  },
+  {
+    "id": 2,
+    "title": "DROIT FAMILIAL",
+    "items": [
+      "Mariage et  planification matrimoniale",
+      "Séparation et divorce",
+      "Garde des enfants",
+      "Pension alimentaire",
+      "Adoption",
+      "Reconnaissance d'union stable",
+      "Partage des biens",
+      "Testaments et inventaires"
+    ],
+    "img": "/work-area-cards/direito-de-familia.jpg",
+    "link": "https://api.whatsapp.com/send/?phone=5519999613496&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+direito+de+fam%C3%ADlia&type=phone_number&app_absent=0"
+  },
+  {
+    "id": 3,
+    "title": "DROIT FISCAL",
+    "items": [
+      "Action déclarative",
+      "Action d'annulation de la dette fiscale",
+      "Action en recouvrement de créances indues"
+    ],
+    "img": "/work-area-cards/direito-tributario.png",
+    "link": "https://api.whatsapp.com/send/?phone=5519999613496&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+direito+tribut%C3%A1rio&type=phone_number&app_absent=0"
+  },
+  {
+    "id": 4,
+    "title": "DROIT DES AFFAIRES ET DES SOCIÉTÉS",
+    "items": [
+      "Agir comme un avocat d'entreprise, avec des conseils juridiques complets",
+      "Mise en œuvre de programmes pour se conformer à la Loi Générale sur la Protection des Données",
+      "Préparation du code de conduite et mise en œuvre de la conformité de l'entreprise"
+    ],
+    "img": "/work-area-cards/direito-empresarial.jpg",
+    "link": "https://api.whatsapp.com/send/?phone=5519999613496&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+direito+empresarial%2Fcorporativo&type=phone_number&app_absent=0"
+  },
+  {
+    "id": 5,
+    "title": "AUTRES DOMAINES DU DROIT",
+    "items": ["Droit Civil", "Droit Pénal", "Droit du Travail"],
+    "img": "/work-area-cards/outras-areas.jpg",
+    "link": "https://api.whatsapp.com/send/?phone=5519999613496&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+outras+%C3%A1reas+do+direito&type=phone_number&app_absent=0"
+  }
+]
