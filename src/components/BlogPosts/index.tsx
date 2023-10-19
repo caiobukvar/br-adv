@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import blogPosts from "../../blogPosts.json";
+import blogPosts from "../../translations/blogPosts.json";
 import Link from "next/link";
 import { VStack } from "@chakra-ui/react";
 
