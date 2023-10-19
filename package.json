@@ -19,10 +19,12 @@
     "@react-google-maps/api": "^2.19.2",
     "@vercel/analytics": "^1.0.2",
     "framer-motion": "^10.16.4",
+    "i18next-browser-languagedetector": "^7.1.0",
     "intersection-observer": "^0.12.2",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-i18next": "^13.3.1",
     "react-icons": "^4.11.0",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"

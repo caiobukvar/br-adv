@@ -11,16 +11,18 @@ import {
   Stack,
   Textarea,
 } from "@chakra-ui/react";
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import i18n from "../../app/i18n";
 import styles from "./page.module.css";
+import i18next from "i18next";
 
 export default function Contato() {
   const { t } = useTranslation();
+  let currentLang = localStorage.getItem("i18nextLng") || "pt";
 
-  const [language, setLanguage] = useState(i18n.language);
-
+  if (!i18next.languages.includes(currentLang)) {
+    currentLang = i18next.defaultLanguage;
+  }
+  
   return (
     <main className={styles.main}>
       <div className={styles.form}>

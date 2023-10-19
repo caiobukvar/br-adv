@@ -12,16 +12,20 @@ import BRAdvLogo from "../../assets/images/official-pics/bradv/logobradv.png";
 import Socials from "../Socials";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 export default function Navbar() {
   const { t } = useTranslation();
   const pathname = usePathname();
-  
-  const [language, setLanguage] = useState(i18n.language);
+  let currentLang = localStorage.getItem("i18nextLng") || "pt";
+
+  if (!i18next.languages.includes(currentLang)) {
+    currentLang = i18next.defaultLanguage;
+  }
 
   const handleChangeLanguage = (value: string) => {
-    setLanguage(value);
     i18n.changeLanguage(value);
+    localStorage.setItem("i18nextLng", value);
   };
 
   return (

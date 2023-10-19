@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
 import { Analytics } from "@vercel/analytics/react";
 import NavbarMobile from "@/components/NavbarMobile";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="pt">
       <body className={inter.className}>
         <Chakra>
           <Navbar />

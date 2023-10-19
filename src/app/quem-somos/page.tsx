@@ -3,12 +3,11 @@ import OurServices from "@/components/OurServices";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import i18n from "../../app/i18n";
 import styles from "./page.module.css";
 
 export default function QuemSomos() {
   const { t } = useTranslation();
-  const [language, setLanguage] = useState(i18n.language);
+
 
   useEffect(() => {
     const animationObserver = new IntersectionObserver(
