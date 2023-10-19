@@ -22,6 +22,12 @@ const resources = {
       services: {
         s5_card_title: "Nossos serviços",
       },
+      navbar: {
+        home: "Início",
+        about: "Quem somos",
+        contact: "Contato",
+        blog: "Blog",
+      },
     },
   },
   en: {
@@ -43,6 +49,12 @@ const resources = {
       },
       services: {
         s5_card_title: "Our services",
+      },
+      navbar: {
+        home: "Home",
+        about: "About us",
+        contact: "Contact",
+        blog: "Blog",
       },
     },
   },
@@ -67,6 +79,12 @@ const resources = {
       services: {
         s5_card_title: "NOS SERVICES",
       },
+      navbar: {
+        home: "Commencer",
+        about: "Qui nous sommes",
+        contact: "Contact",
+        blog: "Blog",
+      },
     },
   },
   de: {
@@ -89,6 +107,12 @@ const resources = {
       services: {
         s5_card_title: "UNSERE DIENSTLEISTUNGEN",
       },
+      navbar: {
+        home: "Start",
+        about: "Wer Wir Sind",
+        contact: "Kontakt",
+        blog: "Blog",
+      },
     },
   },
   es: {
@@ -110,6 +134,12 @@ const resources = {
       },
       services: {
         s5_card_title: "NUESTROS SERVICIOS",
+      },
+      navbar: {
+        home: "Comenzar",
+        about: "Quiénes somos",
+        contact: "Contacto",
+        blog: "Blog",
       },
     },
   },

@@ -12,8 +12,10 @@ import BRAdvLogo from "../../assets/images/official-pics/bradv/logobradv.png";
 import Socials from "../Socials";
 import { Tag } from "@chakra-ui/react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
+  const { t } = useTranslation();
   const pathname = usePathname();
   const [language, setLanguage] = useState("pt");
 
@@ -30,22 +32,22 @@ export default function Navbar() {
 
         <div className={styles.nav}>
           <a className={pathname === "/" ? styles.active : ""} href="/">
-            Início
+            {t("navbar.home")}
           </a>
           <a
             className={pathname === "/quem-somos" ? styles.active : ""}
             href="/quem-somos"
           >
-            Quem somos
+            {t("navbar.about")}
           </a>
           <a
             className={pathname === "/contato" ? styles.active : ""}
             href="/contato"
           >
-            Contato
+            {t("navbar.contact")}
           </a>
           <a className={pathname === "/blog" ? styles.active : ""} href="/blog">
-            Blog
+            {t("navbar.blog")}
           </a>
         </div>
 
