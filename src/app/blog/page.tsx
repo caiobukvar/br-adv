@@ -1,7 +1,6 @@
 "use client";
 import UnderConstruction from "@/components/UnderConstruction";
 import styles from "./page.module.css";
-// import BlogPosts from "@/components/BlogPosts";
 
 export default function Blog() {
   return (
@@ -10,7 +9,6 @@ export default function Blog() {
         <h1>Blog</h1>
       </div>
       <div className={styles.posts}>
-        {/* <BlogPosts /> */}
         <UnderConstruction />
       </div>
     </main>
