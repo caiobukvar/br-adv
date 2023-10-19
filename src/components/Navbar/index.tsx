@@ -18,11 +18,10 @@ export default function Navbar() {
   const pathname = usePathname();
 
   //code below to load last language used
-  const [language, setLanguage] = useLocalStorage("i18nextLng", "pt");
+  useLocalStorage("i18nextLng", "pt");
 
   const handleChangeLanguage = (value: string) => {
     i18n.changeLanguage(value);
-    localStorage.setItem("i18nextLng", value);
   };
 
   return (
