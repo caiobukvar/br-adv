@@ -1,22 +1,20 @@
 "use client";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { useEffect, useState } from "react";
-import "./i18n";
-import i18n from "../app/i18n";
-import styles from "./page.module.css";
-import PicCarouselOffice from "@/components/PicCarouselOffice";
-import WorkAreas from "@/components/WorkAreas";
 import LangAdvice from "@/components/LangAdvice";
 import OurServices from "@/components/OurServices";
+import PicCarouselOffice from "@/components/PicCarouselOffice";
+import WorkAreas from "@/components/WorkAreas";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import i18n from "../app/i18n";
+import "./i18n";
+import styles from "./page.module.css";
 
 export default function Home() {
   const { t } = useTranslation();
 
   const [language, setLanguage] = useState(i18n.language);
-
- 
 
   const handleSaibaMaisClick = () => {
     const element = document.getElementById("section__2");

@@ -1,11 +1,10 @@
 "use client";
-import { useEffect } from "react";
-import styles from "./page.module.css";
-import Link from "next/link";
-import i18n from "../../app/i18n";
 import OurServices from "@/components/OurServices";
-import { useState } from "react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import i18n from "../../app/i18n";
+import styles from "./page.module.css";
 
 export default function QuemSomos() {
   const { t } = useTranslation();

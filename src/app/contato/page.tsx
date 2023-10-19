@@ -1,6 +1,6 @@
+"use client";
 /* eslint-disable react/no-children-prop */
 import Maps from "@/components/Maps";
-import styles from "./page.module.css";
 import {
   Button,
   FormControl,
@@ -8,24 +8,30 @@ import {
   Input,
   InputGroup,
   InputLeftAddon,
-  InputRightAddon,
   Stack,
   Textarea,
-  background,
 } from "@chakra-ui/react";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import i18n from "../../app/i18n";
+import styles from "./page.module.css";
 
 export default function Contato() {
+  const { t } = useTranslation();
+
+  const [language, setLanguage] = useState(i18n.language);
+
   return (
     <main className={styles.main}>
       <div className={styles.form}>
         <Stack spacing={4} className={styles.form__content}>
           <div className={styles.floating__header}>
-            <h1>Contato</h1>
+            <h1>{t("contact.form_title")}</h1>
           </div>
           <FormControl isRequired>
-            <FormLabel htmlFor="name">Nome</FormLabel>
+            <FormLabel htmlFor="name">{t("contact.form_name")}</FormLabel>
             <Input
-              placeholder="Insira seu nome"
+              placeholder={t("contact.form_name_ph")}
               name="name"
               variant="flushed"
             />
@@ -33,7 +39,7 @@ export default function Contato() {
 
           <Stack direction={["column", "column", "row"]} w="100%">
             <FormControl isRequired>
-              <FormLabel htmlFor="phone">Telefone/Whatsapp</FormLabel>
+              <FormLabel htmlFor="phone">{t("contact.form_phone")}</FormLabel>
               <InputGroup id="phone">
                 <InputLeftAddon
                   children="+55"
@@ -44,7 +50,7 @@ export default function Contato() {
                 />
                 <Input
                   type="tel"
-                  placeholder="Insira seu telefone"
+                  placeholder={t("contact.form_phone_ph")}
                   name="phone"
                   variant="flushed"
                   className={styles.phone}
@@ -53,11 +59,11 @@ export default function Contato() {
             </FormControl>
 
             <FormControl isRequired>
-              <FormLabel htmlFor="email">E-mail</FormLabel>
+              <FormLabel htmlFor="email">{t("contact.form_email")}</FormLabel>
               <InputGroup id="email">
                 <Input
                   name="email"
-                  placeholder="Insira seu e-mail"
+                  placeholder={t("contact.form_email_ph")}
                   variant="flushed"
                 />
               </InputGroup>
@@ -65,11 +71,13 @@ export default function Contato() {
           </Stack>
 
           <FormControl isRequired>
-            <FormLabel htmlFor="business">Assunto</FormLabel>
+            <FormLabel htmlFor="business">
+              {t("contact.form_business")}
+            </FormLabel>
             <InputGroup id="business">
               <Textarea
                 name="business"
-                placeholder="Insira o motivo de contato"
+                placeholder={t("contact.form_business_ph")}
                 variant="flushed"
               />
             </InputGroup>
@@ -81,7 +89,7 @@ export default function Contato() {
             color="#fff"
             _hover={{ backgroundColor: "#65c56b" }}
           >
-            Enviar
+            {t("contact.send")}
           </Button>
         </Stack>
       </div>
@@ -90,7 +98,7 @@ export default function Contato() {
         className={styles.contact}
         spacing={10}
       >
-        <p>Atendimento: (19) 9 9961.3496 </p>
+        <p>{t("contact.service")}: +55 (19) 9 9961.3496 </p>
       </Stack>
       <Maps />
     </main>
