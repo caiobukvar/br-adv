@@ -27,20 +27,20 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import SocialsInverted from "../SocialsInverted";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function NavbarMobile() {
-  const [language, setLanguage] = useState("pt");
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { t } = useTranslation();
 
   const handleChangeLanguage = (value: string) => {
-    setLanguage(value);
     i18n.changeLanguage(value);
-    setTimeout(onClose, 200);
   };
 
   const onClickWithTimeout = () => {
     setTimeout(onClose, 200);
   };
+
   return (
     <div className={styles.container}>
       <Button colorScheme="blue" onClick={onOpen} backgroundColor="#1c244b">
@@ -52,21 +52,21 @@ export default function NavbarMobile() {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerHeader borderBottomWidth="1px" color="#1c244b" gap={10}>
-            Bianca Rocha Advocacia
+            {t("home.header")}
           </DrawerHeader>
           <DrawerBody className={styles.content}>
             <div className={styles.nav}>
               <Link href="/" onClick={onClickWithTimeout}>
-                Início
+                {t("navbar.home")}
               </Link>
               <Link href="/quem-somos" onClick={onClickWithTimeout}>
-                Quem Somos
+                {t("navbar.about")}
               </Link>
               <Link href="/contato" onClick={onClickWithTimeout}>
-                Contato
+                {t("navbar.contact")}
               </Link>
               <Link href="/blog" onClick={onClickWithTimeout}>
-                Blog
+                {t("navbar.blog")}
               </Link>
             </div>
 
