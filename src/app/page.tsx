@@ -14,12 +14,6 @@ import i18next from "i18next";
 export default function Home() {
   const { t } = useTranslation();
 
-  let currentLang = localStorage.getItem("i18nextLng") || "pt";
-
-  if (!i18next.languages.includes(currentLang)) {
-    currentLang = i18next.defaultLanguage;
-  }
-
   const handleSaibaMaisClick = () => {
     const element = document.getElementById("section__2");
 
