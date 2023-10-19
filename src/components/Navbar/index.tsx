@@ -10,7 +10,6 @@ import SP from "../../assets/images/official-pics/flags/SP.svg";
 import US from "../../assets/images/official-pics/flags/US.svg";
 import BRAdvLogo from "../../assets/images/official-pics/bradv/logobradv.png";
 import Socials from "../Socials";
-import { Tag } from "@chakra-ui/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 

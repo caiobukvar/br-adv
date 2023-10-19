@@ -28,6 +28,9 @@ const resources = {
         contact: "Contato",
         blog: "Blog",
       },
+      advice: {
+        title: "Assessoria de idiomas",
+      },
     },
   },
   en: {
@@ -55,6 +58,9 @@ const resources = {
         about: "About us",
         contact: "Contact",
         blog: "Blog",
+      },
+      advice: {
+        title: "LANGUAGE ADVISORY",
       },
     },
   },
@@ -85,6 +91,9 @@ const resources = {
         contact: "Contact",
         blog: "Blog",
       },
+      advice: {
+        title: "CONSEIL LINGUISTIQUE",
+      },
     },
   },
   de: {
@@ -113,6 +122,9 @@ const resources = {
         contact: "Kontakt",
         blog: "Blog",
       },
+      advice: {
+        title: "SPRACHBERATUNG",
+      },
     },
   },
   es: {
@@ -140,6 +152,9 @@ const resources = {
         about: "Quiénes somos",
         contact: "Contacto",
         blog: "Blog",
+      },
+      advice: {
+        title: "ASESORAMIENTO DE IDIOMAS",
       },
     },
   },

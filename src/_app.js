@@ -13,6 +13,11 @@ i18n.use(initReactI18next).init({
     es: require("../../translations/es-services.json"),
     fr: require("../../translations/fr-services.json"),
     de: require("../../translations/de-services.json"),
+    en: require("../../translations/en-advice.json"),
+    pt: require("../../translations/pt-advice.json"),
+    es: require("../../translations/es-advice.json"),
+    fr: require("../../translations/fr-advice.json"),
+    de: require("../../translations/de-advice.json"),
   },
   lng: "pt",
   interpolation: {
