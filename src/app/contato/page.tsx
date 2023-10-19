@@ -13,16 +13,10 @@ import {
 } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import styles from "./page.module.css";
-import i18next from "i18next";
 
 export default function Contato() {
   const { t } = useTranslation();
-  let currentLang = localStorage.getItem("i18nextLng") || "pt";
 
-  if (!i18next.languages.includes(currentLang)) {
-    currentLang = i18next.defaultLanguage;
-  }
-  
   return (
     <main className={styles.main}>
       <div className={styles.form}>

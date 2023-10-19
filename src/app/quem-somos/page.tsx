@@ -8,7 +8,6 @@ import styles from "./page.module.css";
 export default function QuemSomos() {
   const { t } = useTranslation();
 
-
   useEffect(() => {
     const animationObserver = new IntersectionObserver(
       (entries) => {

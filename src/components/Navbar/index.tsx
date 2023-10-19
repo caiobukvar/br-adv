@@ -10,18 +10,14 @@ import SP from "../../assets/images/official-pics/flags/SP.svg";
 import US from "../../assets/images/official-pics/flags/US.svg";
 import BRAdvLogo from "../../assets/images/official-pics/bradv/logobradv.png";
 import Socials from "../Socials";
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
 
 export default function Navbar() {
   const { t } = useTranslation();
   const pathname = usePathname();
-  let currentLang = localStorage.getItem("i18nextLng") || "pt";
 
-  if (!i18next.languages.includes(currentLang)) {
-    currentLang = i18next.defaultLanguage;
-  }
+  //code below to load last language used
+  localStorage.getItem("i18nextLng") || "pt";
 
   const handleChangeLanguage = (value: string) => {
     i18n.changeLanguage(value);
