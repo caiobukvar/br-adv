@@ -1,15 +1,19 @@
 "use client";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { useEffect } from "react";
-
-import styles from "./page.module.css";
-import PicCarouselOffice from "@/components/PicCarouselOffice";
-import WorkAreas from "@/components/WorkAreas";
 import LangAdvice from "@/components/LangAdvice";
 import OurServices from "@/components/OurServices";
+import PicCarouselOffice from "@/components/PicCarouselOffice";
+import WorkAreas from "@/components/WorkAreas";
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "./i18n";
+import styles from "./page.module.css";
+import i18next from "i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
+
   const handleSaibaMaisClick = () => {
     const element = document.getElementById("section__2");
 
@@ -59,17 +63,17 @@ export default function Home() {
         data-animate={`${styles.animation__text__focus}`}
       >
         <div className={styles.container}>
-          <h1>Escritório de advocacia BR</h1>
+          <h1>{t("home.header")}</h1>
           <div
             className={`${styles.s1__subtitle} ${styles.animate}`}
             data-animate={`${styles.animation__slide__bottom}`}
           >
-            <h3>DIREITO IMOBILIÁRIO</h3>
+            <h3>{t("home.title")}</h3>
             <button
               className="btn__blue"
               onClick={() => handleSaibaMaisClick()}
             >
-              Saiba mais
+              {t("home.saiba_mais")}
             </button>
           </div>
         </div>
@@ -82,24 +86,21 @@ export default function Home() {
         <div className={styles.holder} />
 
         <div className={`${styles.section__container}`}>
-          <h1>Dra. Bianca Rocha</h1>
+          <h1>{t("home.s2_title")}</h1>
           <span>
-            <strong>Uma advogada apaixonada pela profissão.</strong>
+            <strong>{t("home.s2_subtitle")}</strong>
           </span>
 
           <div
             className={`${styles.section__text} ${styles.animate}`}
             data-animate={`${styles.animation__slide__bottom}`}
           >
-            <p>Atuo com o mercado imobiliário de forma especializada.</p>
-            <p>
-              Me especializei em toda a parte jurídica que envolve os imóveis,
-              principalmente em contratos e incorporação imobiliária.
-            </p>
+            <p>{t("home.s2_text")}</p>
+            <p>{t("home.s2_text2")}</p>
           </div>
 
           <a href="/quem-somos" className="btn__blue__nav">
-            Quem é a Dra. Bianca Rocha
+            {t("home.s2_button")}
           </a>
         </div>
       </section>
@@ -109,7 +110,7 @@ export default function Home() {
         data-animate={`${styles.animation__scale__in__center}`}
       >
         <div className={styles.sticky}>
-          <h1>Nossas áreas de atuação</h1>
+          <h1>{t("areas.s3_title")}</h1>
         </div>
         <WorkAreas />
       </section>

@@ -1,22 +1,17 @@
 "use client";
 import Image from "next/image";
 import styles from "./styles.module.css";
-import PT from "../../assets/images/official-pics/assessoria/portugues.png";
-import EN from "../../assets/images/official-pics/assessoria/ingles.jpg";
-import GE from "../../assets/images/official-pics/assessoria/alemao.jpg";
-import ES from "../../assets/images/official-pics/assessoria/espanhol.jpg";
-import FN from "../../assets/images/official-pics/assessoria/frances.jpg";
 import { useEffect } from "react";
-
-const langs = [
-  { lang: "Português", img: PT },
-  { lang: "Inglês", img: EN },
-  { lang: "Alemão", img: GE },
-  { lang: "Espanhol", img: ES },
-  { lang: "Francês", img: FN },
-];
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 
 export default function LangAdvice() {
+  const { t } = useTranslation();
+
+  const language = i18n.language;
+
+  const langs = require(`../../translations/${language}-advice.json`);
+
   useEffect(() => {
     const animationObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -46,12 +41,12 @@ export default function LangAdvice() {
       className={`${styles.container} ${styles.animate}`}
       data-animate={`${styles.scale__in__center}`}
     >
-      <h1>Assessoria de idiomas</h1>
+      <h1>{t("advice.title")}</h1>
       <div className={`${styles.content} ${styles.scale__in__center}`}>
-        {langs.map((lang) => (
+        {langs.map((lang: any) => (
           <div key={lang.lang} className={styles.item}>
-            <Image src={lang.img} alt={lang.lang} />
-            <h2>{lang.lang}</h2>
+            <Image src={lang.img} alt={lang.lang} width={300} height={200} />
+            <h2>{t(lang.lang)}</h2>
           </div>
         ))}
       </div>

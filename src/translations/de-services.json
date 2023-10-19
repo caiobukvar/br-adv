@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Außergerichtliche Interessenvertretung",
+    "text": "Bianca Rocha Advocacia ist eine umfassende Anwaltskanzlei, die immer auf der Suche nach einer schnellen Lösung für Probleme ist, um dem Mandanten Zeit zu sparen und die Zufriedenheit mit der Lösung zu steigern.",
+    "img": "/services-img/extrajudicial.jpg"
+  },
+  {
+    "name": "Familien- Und Erbrecht",
+    "text": "Persönliche Herangehensweise an jeden Fall, Erfahrung in gerichtlichen und außergerichtlichen Scheidungen, Inventaren, Sorgerechtsverfahren usw.",
+    "img": "/services-img/dirfam.jpg"
+  },
+  {
+    "name": "Beratungen",
+    "text": "Spezialisierte Beratung in Prozessen im Immobilienrecht, mit Vorbereitung und Prüfung von Verträgen, Analyse von Kauf- und Verkaufsrisiken, unerwünschtem Besitz, Besitzhandlungen usw.",
+    "img": "/services-img/consultorias.jpg"
+  }
+]

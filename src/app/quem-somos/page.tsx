@@ -1,10 +1,13 @@
 "use client";
-import { useEffect } from "react";
-import styles from "./page.module.css";
-import Link from "next/link";
 import OurServices from "@/components/OurServices";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import styles from "./page.module.css";
 
 export default function QuemSomos() {
+  const { t } = useTranslation();
+
   useEffect(() => {
     const animationObserver = new IntersectionObserver(
       (entries) => {
@@ -47,31 +50,17 @@ export default function QuemSomos() {
         <div className={styles.mask} />
         <div className={styles.background}>
           <div className={styles.content}>
-            <h1>Dra. Bianca Rocha</h1>
-            <p>Especialista em Direito Imobiliário.</p>
-            <p>Sou uma advogada apaixonada pela profissão.</p>
-            <p>Atuo com o mercado imobiliário de forma especializada.</p>
-            <p>
-              Me especializei em toda a parte jurídica envolvendo imóveis,
-              principalmente em contratos e incorporação imobiliária
-            </p>
-            <p>
-              Me formei pela Universiade Salesiana de São Paulo, com pós em
-              Direito Imobiliário, com diversos cursos de extensão jurídicos.
-            </p>
-            <p>
-              Tive o privilégio de trabalhar internacionalmente como estagiária
-              na <strong>Organização dos Estados Americanos</strong> e na{" "}
-              <strong>ONU-CEPAL</strong>.
-            </p>
-            <p>
-              Sou sócia-propietária do escritório{" "}
-              <strong>Bianca Rocha Advocacia</strong>, em{" "}
-              <strong>Hortolândia/SP</strong>, com atuação em todo o Brasil.
-            </p>
+            <h1>{t("about.title")}</h1>
+            <p>{t("about.text")}</p>
+            <p>{t("about.text2")}</p>
+            <p>{t("about.text3")}</p>
+            <p>{t("about.text4")}</p>
+            <p>{t("about.text5")}</p>
+            <p>{t("about.text6")}</p>
+            <p>{t("about.text7")}</p>
           </div>
           <div className={styles.content__channels}>
-            <h3>Conheça meus canais de conteúdo:</h3>
+            <h3>{t("about.content_title")}</h3>
 
             <div>
               <Link href="https://bianca500.jusbrasil.com.br" target="_blank">
@@ -109,15 +98,12 @@ export default function QuemSomos() {
             className={`${styles.text__container} ${styles.animate}`}
             data-animate={`${styles.animation__text__focus__in}`}
           >
-            <h1>Práticas de Bianca Rocha Advocacia</h1>
+            <h1>{t("about.s2_title")}</h1>
             <p
               className={`${styles.text} ${styles.animate}`}
               data-animate={`${styles.animation__slide__bottom}`}
             >
-              Nossos advogados dedicados trazem uma abordagem única para todos
-              os casos. Hoje, trabalhamos com uma série de regulamentos e
-              requisistos. Confira nossas áreas de especialização e ligue para
-              falar sobre suas questões legais hoje mesmo!
+              {t("about.s2_text")}
             </p>
           </div>
           <div className={styles.image} />

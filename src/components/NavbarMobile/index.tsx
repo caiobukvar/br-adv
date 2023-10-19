@@ -13,8 +13,7 @@ import {
   Tag,
   useDisclosure,
 } from "@chakra-ui/react";
-
-import { usePathname } from "next/navigation";
+import i18n from "../../app/i18n";
 import Image from "next/image";
 import styles from "./styles.module.css";
 import BR from "../../assets/images/official-pics/flags/BR.svg";
@@ -27,13 +26,21 @@ import Socials from "../Socials";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import SocialsInverted from "../SocialsInverted";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function NavbarMobile() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { t } = useTranslation();
+
+  const handleChangeLanguage = (value: string) => {
+    i18n.changeLanguage(value);
+  };
 
   const onClickWithTimeout = () => {
     setTimeout(onClose, 200);
   };
+
   return (
     <div className={styles.container}>
       <Button colorScheme="blue" onClick={onOpen} backgroundColor="#1c244b">
@@ -45,39 +52,39 @@ export default function NavbarMobile() {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerHeader borderBottomWidth="1px" color="#1c244b" gap={10}>
-            Bianca Rocha Advocacia
+            {t("home.header")}
           </DrawerHeader>
           <DrawerBody className={styles.content}>
             <div className={styles.nav}>
               <Link href="/" onClick={onClickWithTimeout}>
-                Início
+                {t("navbar.home")}
               </Link>
               <Link href="/quem-somos" onClick={onClickWithTimeout}>
-                Quem Somos
+                {t("navbar.about")}
               </Link>
               <Link href="/contato" onClick={onClickWithTimeout}>
-                Contato
+                {t("navbar.contact")}
               </Link>
               <Link href="/blog" onClick={onClickWithTimeout}>
-                Blog
+                {t("navbar.blog")}
               </Link>
             </div>
 
             <div className={styles.available__languages}>
               <div>
-                <button>
-                  <Image src={US} alt="United States" />
-                </button>
-                <button>
-                  <Image src={FR} alt="France" />
-                </button>
-                <button>
-                  <Image src={GE} alt="Germany" />
-                </button>
-                <button>
+                <button onClick={() => handleChangeLanguage("pt")}>
                   <Image src={BR} alt="Brazil" />
                 </button>
-                <button>
+                <button onClick={() => handleChangeLanguage("en")}>
+                  <Image src={US} alt="United States" />
+                </button>
+                <button onClick={() => handleChangeLanguage("fr")}>
+                  <Image src={FR} alt="France" />
+                </button>
+                <button onClick={() => handleChangeLanguage("de")}>
+                  <Image src={GE} alt="Germany" />
+                </button>
+                <button onClick={() => handleChangeLanguage("es")}>
                   <Image src={SP} alt="Spain" />
                 </button>
               </div>

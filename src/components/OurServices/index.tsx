@@ -1,10 +1,18 @@
 "use client";
 import Image from "next/image";
 import styles from "./styles.module.css";
-import services from "../../services.json";
 import { useEffect } from "react";
+import i18n from "i18next";
+import { useTranslation } from "react-i18next";
 
 export default function OurServices() {
+
+  const { t } = useTranslation();
+
+  const language = i18n.language;
+
+  const services = require(`../../translations/${language}-services.json`);
+
   useEffect(() => {
     const animationObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -35,16 +43,16 @@ export default function OurServices() {
         className={`${styles.animate}`}
         data-animate={`${styles.animation__tracking__in__expand}`}
       >
-        Nossos serviços
+        {t("services.s5_card_title")}
       </h1>
       <div>
-        {services.map((service) => (
+        {services.map((service: any) => (
           <div
             key={service.name}
             className={`${styles.services} ${styles.animate}`}
             data-animate={`${styles.animation__slide__in__bottom}`}
           >
-            <p>{service.text}</p>
+            <p>{t(service.text)}</p>
             <div>
               <Image
                 src={service.img}
@@ -52,7 +60,7 @@ export default function OurServices() {
                 width={64}
                 height={64}
               />
-              <p>{service.name}</p>
+              <p>{t(service.name)}</p>
             </div>
           </div>
         ))}

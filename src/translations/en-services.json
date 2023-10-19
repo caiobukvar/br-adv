@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Extrajudicial Advocacy",
+    "text": "Bianca Rocha Advocacia is a complete law firm, always looking for a quick solution to issues, saving the client's time and increasing satisfaction with the resolution.",
+    "img": "/services-img/extrajudicial.jpg"
+  },
+  {
+    "name": "Family And Succession Law",
+    "text": "Personalized approach to each case, experience in judicial and extrajudicial divorces, inventories, custody proceedings, etc.",
+    "img": "/services-img/dirfam.jpg"
+  },
+  {
+    "name": "Consultancies",
+    "text": "Specialized consultancy in processes involving Real Estate Law, with preparation and review of contracts, analysis of purchase and sale risk, adverse possession, possessory actions, etc.",
+    "img": "/services-img/consultorias.jpg"
+  }
+]

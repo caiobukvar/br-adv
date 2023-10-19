@@ -1,6 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import i18n from "../../app/i18n";
 import styles from "./styles.module.css";
 import BR from "../../assets/images/official-pics/flags/BR.svg";
 import FR from "../../assets/images/official-pics/flags/FR.svg";
@@ -9,10 +10,15 @@ import SP from "../../assets/images/official-pics/flags/SP.svg";
 import US from "../../assets/images/official-pics/flags/US.svg";
 import BRAdvLogo from "../../assets/images/official-pics/bradv/logobradv.png";
 import Socials from "../Socials";
-import { Tag } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
+  const { t } = useTranslation();
   const pathname = usePathname();
+
+  const handleChangeLanguage = (value: string) => {
+    i18n.changeLanguage(value);
+  };
 
   return (
     <div className={styles.container}>
@@ -22,46 +28,43 @@ export default function Navbar() {
 
         <div className={styles.nav}>
           <a className={pathname === "/" ? styles.active : ""} href="/">
-            Início
+            {t("navbar.home")}
           </a>
           <a
             className={pathname === "/quem-somos" ? styles.active : ""}
             href="/quem-somos"
           >
-            Quem somos
+            {t("navbar.about")}
           </a>
           <a
             className={pathname === "/contato" ? styles.active : ""}
             href="/contato"
           >
-            Contato
+            {t("navbar.contact")}
           </a>
           <a className={pathname === "/blog" ? styles.active : ""} href="/blog">
-            Blog
+            {t("navbar.blog")}
           </a>
         </div>
 
         <div className={styles.available__languages}>
           <div>
-            <button>
-              <Image src={US} alt="United States" />
-            </button>
-            <button>
-              <Image src={FR} alt="France" />
-            </button>
-            <button>
-              <Image src={GE} alt="Germany" />
-            </button>
-            <button>
+            <button onClick={() => handleChangeLanguage("pt")}>
               <Image src={BR} alt="Brazil" />
             </button>
-            <button>
+            <button onClick={() => handleChangeLanguage("en")}>
+              <Image src={US} alt="United States" />
+            </button>
+            <button onClick={() => handleChangeLanguage("fr")}>
+              <Image src={FR} alt="France" />
+            </button>
+            <button onClick={() => handleChangeLanguage("de")}>
+              <Image src={GE} alt="Germany" />
+            </button>
+            <button onClick={() => handleChangeLanguage("es")}>
               <Image src={SP} alt="Spain" />
             </button>
           </div>
-          <Tag borderRadius="full" variant="solid" colorScheme="red">
-            Translations soon!
-          </Tag>
         </div>
       </div>
     </div>

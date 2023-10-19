@@ -1,6 +1,7 @@
+"use client";
 import UnderConstruction from "@/components/UnderConstruction";
 import styles from "./page.module.css";
-import BlogPosts from "@/components/BlogPosts";
+// import BlogPosts from "@/components/BlogPosts";
 
 export default function Blog() {
   return (
