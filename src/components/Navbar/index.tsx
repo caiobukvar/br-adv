@@ -11,14 +11,10 @@ import US from "../../assets/images/official-pics/flags/US.svg";
 import BRAdvLogo from "../../assets/images/official-pics/bradv/logobradv.png";
 import Socials from "../Socials";
 import { useTranslation } from "react-i18next";
-import { useLocalStorage } from "../../Hooks/useLocalStorage";
 
 export default function Navbar() {
   const { t } = useTranslation();
   const pathname = usePathname();
-
-  //code below to load last language used
-  useLocalStorage("i18nextLng", "pt");
 
   const handleChangeLanguage = (value: string) => {
     i18n.changeLanguage(value);
