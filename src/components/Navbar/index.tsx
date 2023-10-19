@@ -16,7 +16,8 @@ import { useTranslation } from "react-i18next";
 export default function Navbar() {
   const { t } = useTranslation();
   const pathname = usePathname();
-  const [language, setLanguage] = useState("pt");
+  
+  const [language, setLanguage] = useState(i18n.language);
 
   const handleChangeLanguage = (value: string) => {
     setLanguage(value);

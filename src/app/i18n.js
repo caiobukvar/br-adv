@@ -31,6 +31,24 @@ const resources = {
       advice: {
         title: "Assessoria de idiomas",
       },
+      about: {
+        title: "Dra. Bianca Rocha",
+        text: "Especialista em Direito Imobiliário.",
+        text2: "Sou uma advogada apaixonada pela profissão.",
+        text3: "Atuo com o mercado imobiliário de forma especializada.",
+        text4:
+          "Me especializei em toda a parte jurídica envolvendo imóveis, principalmente em contratos e incorporação imobiliária.",
+        text5:
+          "Me formei pela Universiade Salesiana de São Paulo, com pós em Direito Imobiliário, com diversos cursos de extensão jurídicos.",
+        text6:
+          "Tive o privilégio de trabalhar internacionalmente como estagiária na <strong>Organização dos Estados Americanos e ONU-CEPAL</strong>.",
+        text7:
+          "Sou sócia-propietária do escritório Bianca Rocha Advocacia, em Hortolândia/SP, com atuação em todo o Brasil.",
+        content_title: "Conheça meus canais de conteúdo:",
+        s2_title: "Práticas de Bianca Rocha Advocacia",
+        s2_text:
+          "Nossos advogados dedicados trazem uma abordagem única para todos os casos. Hoje, trabalhamos com uma série de regulamentos e requisistos. Confira nossas áreas de especialização e ligue para falar sobre suas questões legais hoje mesmo!",
+      },
     },
   },
   en: {
@@ -61,6 +79,24 @@ const resources = {
       },
       advice: {
         title: "LANGUAGE ADVISORY",
+      },
+      about: {
+        title: "Dr. Bianca Rocha",
+        text: "Specialist in Real Estate Law.",
+        text2: "I am a lawyer passionate about the profession.",
+        text3: "I work with the real estate market in a specialized way.",
+        text4:
+          "Specialized in all legal aspects involving real estate, mainly in contracts and real estate development.",
+        text5:
+          "Graduated from the Salesiana University of São Paulo, did my postgraduate degree in Real Estate Law, and completed several legal extension courses.",
+        text6:
+          "Had the privilege of working internationally as an intern at the <strong>Organization of American States and UN-ECLAC</strong>.",
+        text7:
+          "Co-owner of the Bianca Rocha Advocacia office in the city of Hortolândia/SP with operations throughout Brazil.",
+        content_title: "Discover my content channels:",
+        s2_title: "Practices of Bianca Rocha Advocacia",
+        s2_text:
+          "Our dedicated lawyers bring a unique approach to every case. Today, we work with a series of regulations and requirements. Check out our areas of expertise and call us to discuss your legal questions today.",
       },
     },
   },
@@ -94,6 +130,24 @@ const resources = {
       advice: {
         title: "CONSEIL LINGUISTIQUE",
       },
+      about: {
+        title: "Dr Bianca Rocha",
+        text: "Spécialiste en droit immobilier.",
+        text2: "Un avocat passionné par le métier.",
+        text3: "Je travaille avec le marché immobilier de manière spécialisée",
+        text4:
+          "Spécialisé dans tous les aspects juridiques liés à l'immobilier, principalement dans les contrats et la promotion immobilière.",
+        text5:
+          "J'ai obtenu mon diplôme de l'Université Salesiana de São Paulo, j'ai obtenu mon diplôme de troisième cycle en droit immobilier et j'ai suivi plusieurs cours de vulgarisation juridique.",
+        text6:
+          "J'ai eu le privilège de travailler à l'échelle internationale en tant que stagiaire à <strong>l'Organisation des États américains et à la CEPALC</strong>.",
+        text7:
+          "Copropriétaire du bureau de Bianca Rocha Advocacia dans la ville d'Hortolândia/SP avec des opérations dans tout le Brésil.",
+        content_title: "Découvrez mes chaînes de contenu:",
+        s2_title: "Pratiques de Bianca Rocha Advocacia",
+        s2_text:
+          "Nos avocats dévoués apportent une approche unique à chaque cas. Aujourd’hui, nous travaillons avec une série de réglementations et d’exigences. Découvrez nos domaines d’expertise et appelez-nous dès aujourd’hui pour discuter de vos questions juridiques.",
+      },
     },
   },
   de: {
@@ -125,6 +179,24 @@ const resources = {
       advice: {
         title: "SPRACHBERATUNG",
       },
+      about: {
+        title: "Bianca Rocha",
+        text: "Spezialist für Immobilienrecht.",
+        text2: "Ich bin Anwalt mit Leidenschaft für meinen Beruf.",
+        text3: "Arbeite spezialisiert auf den Immobilienmarkt.",
+        text4:
+          "Ich habe mich auf alle rechtlichen Aspekte im Zusammenhang mit Immobilien spezialisiert, hauptsächlich auf Verträge und Immobilienentwicklung.",
+        text5:
+          "Ich habe meinen Abschluss an der Salesiana-Universität von São Paulo gemacht, mein Aufbaustudium im Immobilienrecht absolviert und mehrere juristische Erweiterungskurse absolviert.",
+        text6:
+          "Ich hatte das Privileg, als Praktikant bei der <strong>Organisation Amerikanischer Staaten und der UN-ECLAC international zu arbeiten <strong>l'Organisation des États américains et à la CEPALC</strong>.",
+        text7:
+          "Miteigentümerin des Büros von Bianca Rocha Advocacia in der Stadt Hortolândia/SP mit Niederlassungen in ganz Brasilien.",
+        content_title: "Entdecken Sie meine Content-Kanäle:",
+        s2_title: "Praktiken von Bianca Rocha Advocacia",
+        s2_text:
+          "Unsere engagierten Anwälte verfolgen bei jedem Fall einen einzigartigen Ansatz. Heute arbeiten wir mit einer Reihe von Vorschriften und Anforderungen. Informieren Sie sich über unsere Fachgebiete und rufen Sie uns noch heute an, um Ihre rechtlichen Fragen zu besprechen.",
+      },
     },
   },
   es: {
@@ -155,6 +227,24 @@ const resources = {
       },
       advice: {
         title: "ASESORAMIENTO DE IDIOMAS",
+      },
+      about: {
+        title: "Dra. Bianca Rocha",
+        text: "Especialista en Derecho Inmobiliario.",
+        text2: "Abogada apasionada por la profesión.",
+        text3: "Trabajo con el mercado inmobiliario de forma especializada.",
+        text4:
+          "Me especialicé en todos los aspectos jurídicos relacionados con el sector inmobiliario, principalmente en contratos y desarrollo inmobiliario.",
+        text5:
+          "Me gradué de la Universidad Salesiana de São Paulo, realicé mi posgrado en Derecho Inmobiliario y realicé varios cursos de extensión jurídica.",
+        text6:
+          "Tuve el privilegio de trabajar internacionalmente como pasante en la <strong>Organización de Estados Americanos y ONU-CEPAL</strong>.",
+        text7:
+          "Copropietaria de la oficina de Bianca Rocha Advocacia en la ciudad de Hortolândia/SP con operaciones en todo Brasil.",
+        content_title: "Descubre mis canales de contenido:",
+        s2_title: "Prácticas de Bianca Rocha Advocacia",
+        s2_text:
+          "Nuestros dedicados abogados aportan un enfoque único a cada caso. Hoy en día trabajamos con una serie de normativas y requisitos. Consulte nuestras áreas de especialización y llámenos hoy para discutir sus preguntas legales.",
       },
     },
   },
