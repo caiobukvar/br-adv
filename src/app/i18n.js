@@ -63,6 +63,9 @@ const resources = {
         send: "Enviar",
         service: "Atendimento",
       },
+      construction: {
+        title: "Em construção",
+      },
     },
   },
   en: {
@@ -124,6 +127,9 @@ const resources = {
         form_business_ph: "Insert reason for contact",
         send: "Send",
         service: "Service",
+      },
+      construction: {
+        title: "Under construction",
       },
     },
   },
@@ -188,6 +194,9 @@ const resources = {
         send: "Envoyer",
         service: "Service",
       },
+      construction: {
+        title: "En construction",
+      },
     },
   },
   de: {
@@ -250,6 +259,9 @@ const resources = {
         send: "Senden",
         service: "Dienst",
       },
+      construction: {
+        title: "Im Bau",
+      },
     },
   },
   es: {
@@ -311,6 +323,9 @@ const resources = {
         form_business_ph: "Introduzca el motivo del contacto",
         send: "Enviar",
         service: "Servicio",
+      },
+      construction: {
+        title: "¡En obra",
       },
     },
   },
