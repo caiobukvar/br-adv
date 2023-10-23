@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Construction from "../../assets/images/construction/under-construction.svg";
 import styles from "./styles.module.css";
