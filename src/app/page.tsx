@@ -9,7 +9,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "./i18n";
 import styles from "./page.module.css";
-import i18next from "i18next";
 
 export default function Home() {
   const { t } = useTranslation();

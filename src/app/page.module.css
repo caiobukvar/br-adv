@@ -155,7 +155,7 @@
     width: 100%;
     gap: 50px;
     padding: 0 20px;
-    height: calc(100vh - 140px);
+    min-height: calc(100vh - 140px);
   }
 
   .section__1 > div {
@@ -225,6 +225,7 @@
     padding: 0;
     flex-direction: column-reverse;
     justify-content: flex-end;
+    gap: 30px;
   }
 
   .section__2,
@@ -274,7 +275,7 @@
   .section__2,
   .section__4,
   .section__5 {
-    gap: 50px;
+    gap: 30px;
   }
 
   .section__3 {
