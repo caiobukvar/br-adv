@@ -42,7 +42,7 @@ const resources = {
         text5:
           "Me formei pela Universiade Salesiana de São Paulo, com pós em Direito Imobiliário, com diversos cursos de extensão jurídicos.",
         text6:
-          "Tive o privilégio de trabalhar internacionalmente como estagiária na <strong>Organização dos Estados Americanos e ONU-CEPAL</strong>.",
+          "Tive o privilégio de trabalhar internacionalmente como estagiária na Organização dos Estados Americanos e ONU-CEPAL.",
         text7:
           "Sou sócia-propietária do escritório Bianca Rocha Advocacia, em Hortolândia/SP, com atuação em todo o Brasil.",
         content_title: "Conheça meus canais de conteúdo:",
@@ -107,7 +107,7 @@ const resources = {
         text5:
           "Graduated from the Salesiana University of São Paulo, did my postgraduate degree in Real Estate Law, and completed several legal extension courses.",
         text6:
-          "Had the privilege of working internationally as an intern at the <strong>Organization of American States and UN-ECLAC</strong>.",
+          "Had the privilege of working internationally as an intern at the Organization of American States and UN-ECLAC.",
         text7:
           "Co-owner of the Bianca Rocha Advocacia office in the city of Hortolândia/SP with operations throughout Brazil.",
         content_title: "Discover my content channels:",
@@ -173,7 +173,7 @@ const resources = {
         text5:
           "J'ai obtenu mon diplôme de l'Université Salesiana de São Paulo, j'ai obtenu mon diplôme de troisième cycle en droit immobilier et j'ai suivi plusieurs cours de vulgarisation juridique.",
         text6:
-          "J'ai eu le privilège de travailler à l'échelle internationale en tant que stagiaire à <strong>l'Organisation des États américains et à la CEPALC</strong>.",
+          "J'ai eu le privilège de travailler à l'échelle internationale en tant que stagiaire à l'Organisation des États américains et à la CEPALC.",
         text7:
           "Copropriétaire du bureau de Bianca Rocha Advocacia dans la ville d'Hortolândia/SP avec des opérations dans tout le Brésil.",
         content_title: "Découvrez mes chaînes de contenu:",
@@ -238,7 +238,7 @@ const resources = {
         text5:
           "Ich habe meinen Abschluss an der Salesiana-Universität von São Paulo gemacht, mein Aufbaustudium im Immobilienrecht absolviert und mehrere juristische Erweiterungskurse absolviert.",
         text6:
-          "Ich hatte das Privileg, als Praktikant bei der <strong>Organisation Amerikanischer Staaten und der UN-ECLAC international zu arbeiten <strong>l'Organisation des États américains et à la CEPALC</strong>.",
+          "Ich hatte das Privileg, als Praktikant bei der Organisation Amerikanischer Staaten und der UN-ECLAC international zu arbeiten l'Organisation des États américains et à la CEPALC</strong>.",
         text7:
           "Miteigentümerin des Büros von Bianca Rocha Advocacia in der Stadt Hortolândia/SP mit Niederlassungen in ganz Brasilien.",
         content_title: "Entdecken Sie meine Content-Kanäle:",
@@ -303,7 +303,7 @@ const resources = {
         text5:
           "Me gradué de la Universidad Salesiana de São Paulo, realicé mi posgrado en Derecho Inmobiliario y realicé varios cursos de extensión jurídica.",
         text6:
-          "Tuve el privilegio de trabajar internacionalmente como pasante en la <strong>Organización de Estados Americanos y ONU-CEPAL</strong>.",
+          "Tuve el privilegio de trabajar internacionalmente como pasante en la Organización de Estados Americanos y ONU-CEPAL.",
         text7:
           "Copropietaria de la oficina de Bianca Rocha Advocacia en la ciudad de Hortolândia/SP con operaciones en todo Brasil.",
         content_title: "Descubre mis canales de contenido:",
