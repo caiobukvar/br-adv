@@ -1,7 +1,19 @@
 import styles from "./styles.module.css";
-import blogPosts from "../../translations/blogPosts.json";
+import blogPosts from "../../blogPosts.json";
 import Link from "next/link";
 import { VStack } from "@chakra-ui/react";
+
+export async function getStaticProps() {
+  const blogPosts = await fetch("/api/blog-posts").then((response) =>
+    response.json(),
+  );
+  return {
+    props: {
+      blogPosts,
+    },
+  };
+}
+console.log(blogPosts);
 
 export default function BlogPosts() {
   return (
@@ -11,7 +23,7 @@ export default function BlogPosts() {
           <div key={post.id} className={styles.card}>
             <VStack as="button" className={styles.card__container}>
               <h1>{post.title}</h1>
-              <Link href="">Leia mais</Link>
+              <Link href={`/blog/${post.id}`}>Leia mais</Link>
             </VStack>
             <div className={styles.footer}>
               <span>Data</span> - <span>Número de comentários</span>
