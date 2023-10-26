@@ -18,10 +18,6 @@ export default function Page({ params }: { params: { id: string } }) {
     (post) => post.id === Number(params.id),
   );
 
-  if (post) {
-    console.log(post);
-  }
-
   return (
     <main className={styles.main}>
       <div className={styles.posts}>
