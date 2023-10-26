@@ -21,6 +21,18 @@
   gap: 30px;
 }
 
+.article a {
+  align-self: flex-start;
+  color: #fff;
+  background-color: #467ff7;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.article a:hover {
+  text-decoration: underline;
+}
+
 .article h2 {
   font-size: 2em;
   font-weight: 600;

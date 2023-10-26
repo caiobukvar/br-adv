@@ -1,5 +1,7 @@
 import styles from "./page.module.css";
 import blogPosts from "../../../blogPosts.json";
+import { Button, HStack } from "@chakra-ui/react";
+import Link from "next/link";
 
 type Post = {
   id: number;
@@ -22,6 +24,7 @@ export default function Page({ params }: { params: { id: string } }) {
     <main className={styles.main}>
       <div className={styles.posts}>
         <article className={styles.article}>
+          <Link href="/blog">{`< Blog`}</Link>
           <h2>{post?.title}</h2>
           {post?.paragraphs.map((paragraph) => {
             return <p key={paragraph.id}>{paragraph.paragraph}</p>;
