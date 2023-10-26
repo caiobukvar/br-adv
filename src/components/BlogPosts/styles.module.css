@@ -1,15 +1,21 @@
 .container {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 100%;
-  gap: 30px;
+  width: 100%;
+}
+
+.container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  align-self: center;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   width: 200px;

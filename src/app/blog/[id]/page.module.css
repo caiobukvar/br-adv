@@ -28,6 +28,7 @@
 
 @media (max-width: 1023px) {
   .main {
+    /* min height to match navbar + footer to always show up */
     min-height: calc(100vh - 381px);
     height: 100%;
   }
