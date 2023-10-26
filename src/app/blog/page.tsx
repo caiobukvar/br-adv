@@ -14,7 +14,6 @@ export default function Blog() {
       </div>
       <div className={styles.posts}>
         <BlogPosts />
-        {/* <UnderConstruction /> */}
       </div>
     </main>
   );
