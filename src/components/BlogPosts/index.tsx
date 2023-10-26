@@ -3,18 +3,6 @@ import blogPosts from "../../blogPosts.json";
 import Link from "next/link";
 import { VStack } from "@chakra-ui/react";
 
-export async function getStaticProps() {
-  const blogPosts = await fetch("/api/blog-posts").then((response) =>
-    response.json(),
-  );
-  return {
-    props: {
-      blogPosts,
-    },
-  };
-}
-console.log(blogPosts);
-
 export default function BlogPosts() {
   return (
     <div className={styles.container}>
