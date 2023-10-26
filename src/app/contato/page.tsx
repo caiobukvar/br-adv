@@ -14,6 +14,12 @@ import {
 import { useTranslation } from "react-i18next";
 import styles from "./page.module.css";
 
+export async function generateMetadata() {
+  return {
+    title: "Contato",
+  };
+}
+
 export default function Contato() {
   const { t } = useTranslation();
 
