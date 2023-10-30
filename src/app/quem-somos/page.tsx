@@ -5,12 +5,6 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./page.module.css";
 
-export async function generateMetadata() {
-  return {
-    title: "Quem somos",
-  };
-}
-
 export default function QuemSomos() {
   const { t } = useTranslation();
 
