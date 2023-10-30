@@ -1,24 +1,43 @@
-import styles from "./styles.module.css";
-import blogPosts from "../../translations/blogPosts.json";
+"use client";
+
 import Link from "next/link";
 import { VStack } from "@chakra-ui/react";
+import { Wrap, WrapItem } from "@chakra-ui/react";
 
-export default function BlogPosts() {
+import { type PostData } from "@/services/posts";
+
+import styles from "./styles.module.css";
+
+export const PostNotFound = () => {
   return (
-    <div className={styles.container}>
-      {blogPosts.map((post) => {
+    <div>
+      <span>Post não encontrado.</span>
+    </div>
+  );
+};
+
+type Props = {
+  posts: PostData[];
+};
+
+const BlogPosts: React.FC<Props> = ({ posts }) => {
+  return (
+    <Wrap className={styles.container} spacing={5}>
+      {posts.map((post) => {
         return (
-          <div key={post.id} className={styles.card}>
+          <WrapItem key={post.id} className={styles.card}>
             <VStack as="button" className={styles.card__container}>
               <h1>{post.title}</h1>
-              <Link href="">Leia mais</Link>
+              <Link href={`/blog/${post.id}`}>Leia mais</Link>
             </VStack>
             <div className={styles.footer}>
               <span>Data</span> - <span>Número de comentários</span>
             </div>
-          </div>
+          </WrapItem>
         );
       })}
-    </div>
+    </Wrap>
   );
-}
+};
+
+export default BlogPosts;
