@@ -1,13 +1,29 @@
-import styles from "./styles.module.css";
-import blogPosts from "../../blogPosts.json";
+"use client";
+
 import Link from "next/link";
 import { VStack } from "@chakra-ui/react";
 import { Wrap, WrapItem } from "@chakra-ui/react";
 
-export default function BlogPosts() {
+import { type PostData } from "@/services/posts";
+
+import styles from "./styles.module.css";
+
+export const PostNotFound = () => {
+  return (
+    <div>
+      <span>Post não encontrado.</span>
+    </div>
+  );
+};
+
+type Props = {
+  posts: PostData[];
+};
+
+const BlogPosts: React.FC<Props> = ({ posts }) => {
   return (
     <Wrap className={styles.container} spacing={5}>
-      {blogPosts.map((post) => {
+      {posts.map((post) => {
         return (
           <WrapItem key={post.id} className={styles.card}>
             <VStack as="button" className={styles.card__container}>
@@ -22,4 +38,6 @@ export default function BlogPosts() {
       })}
     </Wrap>
   );
-}
+};
+
+export default BlogPosts;

@@ -1,36 +1,51 @@
+import type { Metadata } from "next";
+
+import { getPost } from "@/services/posts";
+import { PostNotFound } from "@/components/BlogPosts";
+
 import styles from "./page.module.css";
-import blogPosts from "../../../blogPosts.json";
-import { Button, HStack } from "@chakra-ui/react";
 import Link from "next/link";
 
-type Post = {
-  id: number;
-  title: string;
-  paragraphs: { id: number; paragraph: string }[];
+const getData = async (postId: number) => {
+  const response = await getPost(postId);
+  return response;
 };
 
-export async function generateMetadata({ params }: { params: { id: string } }) {
-  return {
-    title: `Blog post ${params.id}`,
-  };
-}
+export const generateMetadata = async ({
+  params,
+}: {
+  params: { id: string };
+}): Promise<Metadata> => {
+  const post = await getData(Number(params.id));
 
-export default function Page({ params }: { params: { id: string } }) {
-  const post: Post | undefined = blogPosts.find(
-    (post) => post.id === Number(params.id),
-  );
+  if (!post) return { title: "Post não encontrado" };
+
+  return { title: post?.title };
+};
+
+const Page = async ({ params }: { params: { id: string } }) => {
+  const post = await getData(Number(params.id));
 
   return (
     <main className={styles.main}>
       <div className={styles.posts}>
         <article className={styles.article}>
           <Link href="/blog">{`< Blog`}</Link>
-          <h2>{post?.title}</h2>
-          {post?.paragraphs.map((paragraph) => {
-            return <p key={paragraph.id}>{paragraph.paragraph}</p>;
-          })}
+          {!post ? (
+            <PostNotFound />
+          ) : (
+            <>
+              <h2>{post?.title}</h2>
+
+              {post?.paragraphs.map((paragraph) => {
+                return <p key={paragraph.id}>{paragraph.paragraph}</p>;
+              })}
+            </>
+          )}
         </article>
       </div>
     </main>
   );
-}
+};
+
+export default Page;

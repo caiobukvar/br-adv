@@ -1,21 +1,26 @@
-import styles from "./page.module.css";
+import { getPosts } from "@/services/posts";
 import BlogPosts from "@/components/BlogPosts";
 
-export async function generateMetadata() {
-  return {
-    title: "Blog",
-  };
-}
+import styles from "./page.module.css";
 
-export default function Blog() {
+const getData = async () => {
+  const response = await getPosts();
+  return response;
+};
+
+const Page = async () => {
+  const posts = await getData();
+
   return (
     <main className={styles.main}>
       <div className={styles.header}>
         <h1>Blog</h1>
       </div>
       <div className={styles.posts}>
-        <BlogPosts />
+        <BlogPosts posts={posts} />
       </div>
     </main>
   );
 }
+
+export default Page;
