@@ -1,22 +1,30 @@
-import { mailOptions, transporter } from "../../config/nodemailer";
+import { NextRequest, NextResponse } from "next/server";
+import { mailOptions, transporter } from "../../../config/nodemailer";
 
-const CONTACT_MESSAGE_FIELDS = {
-  name: "Name",
-  phone: "Phone",
-  email: "Email",
-  message: "Message",
+type ContactMessageFields = {
+  name: string;
+  phone: string;
+  email: string;
+  message: string;
 };
 
-const generateEmailContent = (data) => {
+type GenerateEmailContent = (data: ContactMessageFields) => {
+  text: string;
+  html: string;
+};
+
+const generateEmailContent: GenerateEmailContent = (data) => {
   const stringData = Object.entries(data).reduce(
     (str, [key, val]) =>
-      (str += `${CONTACT_MESSAGE_FIELDS[key]}: \n${val}} \n \n`),
+      (str += `${key.charAt(0).toUpperCase()}${key.slice(1)}: ${val}\n\n`),
     "",
   );
 
   const htmlData = Object.entries(data).reduce(
     (str, [key, val]) =>
-      (str += `<h1 class="form-heading" align="left">${CONTACT_MESSAGE_FIELDS[key]}</h1><p class="form-answer" align="left">${val}</p>`),
+      (str += `<b>${key.charAt(0).toUpperCase()}${key.slice(
+        1,
+      )}:</b> ${val}<br><br>`),
     "",
   );
 
@@ -26,30 +34,38 @@ const generateEmailContent = (data) => {
   };
 };
 
-const handler = async (req, res) => {
-  if (req.method === "POST") {
-    const data = req.body;
+export async function POST(req: NextRequest) {
+  const data: ContactMessageFields = await req.json();
 
-    if (!data.name || !data.phone || !data.email || !data.message) {
-      return res.status(400).json({ message: "Bad request" });
-    }
-
-    try {
-      await transporter.sendMail({
-        ...mailOptions,
-        subject: `Contato - ${data.name}`,
-        ...generateEmailContent(data),
-      });
-
-      return res.status(200).json({ success: true });
-    } catch (error) {
-      return res.status(400).json({ message: error.message });
-    }
-    res.status(200).json({
-      message: "E-mail sent successfully",
-    });
+  if (!data.name || !data.phone || !data.email || !data.message) {
+    return NextResponse.json(
+      { error: "Bad request" },
+      {
+        status: 400,
+      },
+    );
   }
-  return res.status(400).json({ message: "Bad request" });
-};
 
-export default handler;
+  try {
+    await transporter.sendMail({
+      ...mailOptions,
+      ...generateEmailContent(data),
+      subject: `Contato via site - ${data.name}`,
+    });
+    return NextResponse.json(
+      { success: "E-mail enviado com sucesso" },
+      {
+        status: 200,
+      },
+    );
+  } catch (error) {
+    return NextResponse.json(
+      { error: error.message },
+      {
+        status: 400,
+      },
+    );
+  }
+
+  return NextResponse.json("Email enviado com sucesso", { status: 200 });
+}
