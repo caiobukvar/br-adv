@@ -29,7 +29,9 @@
     ".next/types/**/*.ts",
     "src/app/blog/page.tsx",
     "src/app/contato/page.tsx",
-    "src/app/quem-somos/page.tsx"
-, "src/app/_app.js"  ],
+    "src/app/quem-somos/page.tsx",
+    "src/app/_app.js",
+    "src/app/api/contact/route.ts"
+  ],
   "exclude": ["node_modules"]
 }
