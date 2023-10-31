@@ -8,6 +8,7 @@ What are the main features found in the project?
 
 - React
 - NextJS
+- Typescript
 - i18next
 - Elastice Mail API
 - Vercel
