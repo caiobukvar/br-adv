@@ -10,7 +10,7 @@ This project was made as a learning project for NextJS apps, where I could test 
 - NextJS
 - Typescript
 - i18next
-- Elastic Email API
+- Nodemailer
 - Vercel
 
 ## Installation
