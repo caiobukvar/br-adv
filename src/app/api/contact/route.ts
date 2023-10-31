@@ -66,6 +66,4 @@ export async function POST(req: NextRequest) {
       },
     );
   }
-
-  return NextResponse.json("Email enviado com sucesso", { status: 200 });
 }
