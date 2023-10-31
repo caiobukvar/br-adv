@@ -151,12 +151,18 @@ export default function Contato() {
 
           <Button
             size="md"
-            colorScheme="green"
-            isLoading={isLoading}
-            disabled={
+            variant="solid"
+            bgColor="#00B60B"
+            color="#fff"
+            _hover={{ backgroundColor: "#65c56b" }}
+            _disabled={{
+              bgColor: "gray",
+            }}
+            isDisabled={
               !values.name || !values.phone || !values.email || !values.message
             }
             onClick={onSubmit}
+            isLoading={isLoading}
           >
             {t("contact.send")}
           </Button>
