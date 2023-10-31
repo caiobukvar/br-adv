@@ -176,6 +176,7 @@ export default function Contato() {
         <p>{t("contact.service")}: +55 (19) 9 9961.3496 </p>
       </Stack>
       <Maps />
+      <br />
     </main>
   );
 }
