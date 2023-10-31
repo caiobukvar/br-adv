@@ -88,7 +88,7 @@ export default function Contato() {
               onChange={handleChange}
               onBlur={onBlur}
             />
-            <FormErrorMessage>{t("contact.error.name")}</FormErrorMessage>
+            <FormErrorMessage>{t("contact.error")}</FormErrorMessage>
           </FormControl>
 
           <Stack direction={["column", "column", "row"]} w="100%">
@@ -114,7 +114,7 @@ export default function Contato() {
                   onBlur={onBlur}
                 />
               </InputGroup>
-              <FormErrorMessage>{t("contact.error.phone")}</FormErrorMessage>
+              <FormErrorMessage>{t("contact.error")}</FormErrorMessage>
             </FormControl>
 
             <FormControl isRequired isInvalid={touched.email && !values.email}>
@@ -128,7 +128,7 @@ export default function Contato() {
                 onChange={handleChange}
                 onBlur={onBlur}
               />
-              <FormErrorMessage>{t("contact.error.email")}</FormErrorMessage>
+              <FormErrorMessage>{t("contact.error")}</FormErrorMessage>
             </FormControl>
           </Stack>
 
@@ -146,7 +146,7 @@ export default function Contato() {
               onChange={handleChange}
               onBlur={onBlur}
             />
-            <FormErrorMessage>{t("contact.error.message")}</FormErrorMessage>
+            <FormErrorMessage>{t("contact.error")}</FormErrorMessage>
           </FormControl>
 
           <Button

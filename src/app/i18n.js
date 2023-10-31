@@ -62,12 +62,7 @@ const resources = {
         form_message_ph: "Insira o motivo de contato",
         send: "Enviar",
         service: "Atendimento",
-        error: {
-          name: "Nome é obrigatório!",
-          phone: "Telefone é obrigatório!",
-          email: "E-mail é obrigatório!",
-          message: "Mensagem é obrigatória!",
-        },
+        error: "Campo obrigatório",
       },
       construction: {
         title: "Em construção",
@@ -133,12 +128,7 @@ const resources = {
         form_message_ph: "Insert reason for contact",
         send: "Send",
         service: "Service",
-        error: {
-          name: "Name is required!",
-          phone: "Phone is required!",
-          email: "E-mail is required!",
-          message: "Message is required!",
-        },
+        error: "Required field",
       },
       construction: {
         title: "Under construction",
@@ -205,12 +195,7 @@ const resources = {
         form_message_ph: "Entrez votre raison de contact",
         send: "Envoyer",
         service: "Service",
-        error: {
-          name: "Nom est obligatoire!",
-          phone: "Téléphone est obligatoire!",
-          email: "E-mail est obligatoire!",
-          message: "Message est obligatoire!",
-        },
+        error: "Champ obligatoire",
       },
       construction: {
         title: "En construction",
@@ -276,12 +261,7 @@ const resources = {
         form_message_ph: "Kontaktgrund eingeben",
         send: "Senden",
         service: "Dienst",
-        error: {
-          name: "Name ist erforderlich!",
-          phone: "Telefon ist erforderlich!",
-          email: "E-Mail ist erforderlich!",
-          message: "Nachricht ist erforderlich!",
-        },
+        error: "Pflichtfeld",
       },
       construction: {
         title: "Im Bau",
@@ -347,12 +327,7 @@ const resources = {
         form_message_ph: "Introduzca el motivo del contacto",
         send: "Enviar",
         service: "Servicio",
-        error: {
-          name: "¡Nombre es obligatorio!",
-          phone: "¡Teléfono es obligatorio!",
-          email: "¡Email es obligatorio!",
-          message: "¡Mensaje es obligatoria!",
-        },
+        error: "Campo obligatorio",
       },
       construction: {
         title: "¡En obra",
