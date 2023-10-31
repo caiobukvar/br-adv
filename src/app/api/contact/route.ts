@@ -59,8 +59,9 @@ export async function POST(req: NextRequest) {
       },
     );
   } catch (error) {
+    const typedError = error as Error;
     return NextResponse.json(
-      { error: error.message },
+      { error: typedError.message },
       {
         status: 400,
       },
