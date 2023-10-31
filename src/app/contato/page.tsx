@@ -83,10 +83,11 @@ export default function Contato() {
         position: "top",
       });
     } catch (error) {
+      const typedError = error as Error;
       setContactData((prev) => ({
         ...prev,
         isLoading: false,
-        error: error.message,
+        error: typedError.message,
       }));
       toast({
         title: "Falha ao enviar o e-mail. Tente novamente mais tarde.",
