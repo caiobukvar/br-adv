@@ -51,7 +51,7 @@ export default function Contato() {
       },
     }));
 
-  //! this function says if input has been touched or not
+  //! this function says if input has been touched or not, for error handling
   const onBlur: OnBlurEvent = ({ target }) =>
     setTouched((prev) => ({ ...prev, [target.name]: true }));
 
