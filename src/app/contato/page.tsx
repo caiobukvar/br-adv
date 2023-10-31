@@ -24,7 +24,7 @@ type OnBlurEvent = (
 
 type ContactError = string | undefined;
 interface ContactDataState {
-  values: initValues;
+  values: typeof initValues;
   isLoading: boolean;
   error: ContactError;
 }
