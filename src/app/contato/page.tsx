@@ -11,14 +11,23 @@ import {
   InputLeftAddon,
   Stack,
   Textarea,
+  useToast,
 } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import styles from "./page.module.css";
 import { useState } from "react";
+import { sendContactForm } from "../../lib/api";
 
 type OnBlurEvent = (
   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
 ) => void;
+
+type ContactError = string | undefined;
+interface ContactDataState {
+  values: initValues;
+  isLoading: boolean;
+  error: ContactError;
+}
 
 const initValues = {
   name: "",
@@ -27,17 +36,19 @@ const initValues = {
   message: "",
 };
 
-const initState = {
+const initState: ContactDataState = {
   values: initValues,
   isLoading: false,
+  error: undefined,
 };
 
 export default function Contato() {
   const { t } = useTranslation();
   const [contactData, setContactData] = useState(initState);
   const [touched, setTouched] = useState<{ [key: string]: boolean }>({});
+  const toast = useToast();
 
-  const { values, isLoading } = contactData;
+  const { values, isLoading, error } = contactData;
 
   //! this function changes de initState value, not state itself!
   const handleChange = (
@@ -61,12 +72,29 @@ export default function Contato() {
       isLoading: true,
     }));
 
-    // * api call here
-
-    setContactData((prev) => ({
-      ...prev,
-      isLoading: false,
-    }));
+    try {
+      await sendContactForm(values);
+      setTouched({});
+      setContactData(initState);
+      toast({
+        title: "E-mail enviado com sucesso.",
+        status: "success",
+        duration: 2000,
+        position: "top",
+      });
+    } catch (error) {
+      setContactData((prev) => ({
+        ...prev,
+        isLoading: false,
+        error: error.message,
+      }));
+      toast({
+        title: "Falha ao enviar o e-mail. Tente novamente mais tarde.",
+        status: "error",
+        duration: 2000,
+        position: "top",
+      });
+    }
   };
 
   return (
