@@ -1,14 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
 
-// ? for testing purpose:
-// ? curl http://localhost:3000/api/v1/status -v 
-
-// * GET SERVER STATUS
 export async function GET(req: NextRequest) {
-  return NextResponse.json(
-    { success: "sucesso" },
-    {
-      status: 200,
-    },
-  );
+  const teste = 1;
+
+  try {
+    return NextResponse.json(
+      { valor: teste },
+      {
+        status: 200,
+      },
+    );
+  } catch (error) {
+    return NextResponse.json(
+      { error: "ERROR" },
+      {
+        status: 400,
+      },
+    );
+  }
 }

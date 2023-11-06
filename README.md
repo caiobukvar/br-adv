@@ -9,9 +9,26 @@ This project was made as a learning project for NextJS apps, where I could test 
 - React
 - NextJS
 - Typescript
+
+### Internationalization
+
 - i18next
+
+### Mailer
+
 - Nodemailer
+
+### Deploy
+
 - Vercel
+
+### Testing
+
+- Jest
+
+### Database
+
+- Postgres
 
 ## Installation
 
