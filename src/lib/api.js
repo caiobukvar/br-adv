@@ -1,5 +1,5 @@
 export const sendContactForm = async (data) =>
-  fetch("/api/contact", {
+  fetch("/api/v1/contact", {
     method: "POST",
     body: JSON.stringify(data),
     headers: {

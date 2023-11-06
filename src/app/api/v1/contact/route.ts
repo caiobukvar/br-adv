@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { mailOptions, transporter } from "../../../config/nodemailer";
+import { mailOptions, transporter } from "../../../../config/nodemailer";
 
 type ContactMessageFields = {
   name: string;
