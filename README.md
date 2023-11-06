@@ -2,7 +2,7 @@
 
 ### A fully functional React/NextJS website made for lawyers, that can be customized as wished.
 
-This project was made as a learning project for NextJS apps, where I could test out some features and my skills.
+This project was made as a learning project for NextJS apps, where I could test out some features and consolidate new skills.
 
 ## What are the main features found in the project?
 
