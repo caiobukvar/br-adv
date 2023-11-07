@@ -30,6 +30,10 @@ This project was made as a learning project for NextJS apps, where I could test 
 
 - Postgres
 
+### Containers
+
+- Docker
+
 ## Installation
 
 1. Clone the project from github
