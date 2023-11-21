@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -31,7 +32,8 @@
     "src/app/contato/page.tsx",
     "src/app/quem-somos/page.tsx",
     "src/app/_app.js",
-    "src/app/api/v1/contact/route.ts"
-, "src/app/api/v1/migrations/route.ts"  ],
+    "src/app/api/v1/contact/route.ts",
+    "src/app/api/v1/migrations/route.ts"
+  ],
   "exclude": ["node_modules"]
 }
