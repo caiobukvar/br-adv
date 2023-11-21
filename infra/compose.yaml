@@ -1,7 +1,9 @@
+version: "1.0"
+name: br-adv
 services:
   database:
     image: "postgres:16.0-alpine3.18"
-    environment:
-      POSTGRES_PASSWORD: "Bradv-db1"
+    env_file:
+      - ../.env.development
     ports:
       - "5432:5432"
