@@ -36,5 +36,11 @@ export async function GET(req: NextRequest, res: NextResponse) {
     );
   } catch (error) {
     console.error("Error creating tables:", error);
+    return NextResponse.json(
+      { error: "ERROR" },
+      {
+        status: 400,
+      },
+    );
   }
 }
