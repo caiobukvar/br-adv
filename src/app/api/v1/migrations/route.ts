@@ -11,24 +11,14 @@ export async function GET(req: NextRequest, res: NextResponse) {
   );
 `;
 
-  const createPostsTableQuery = `
-  CREATE TABLE IF NOT EXISTS posts (
-    id SERIAL PRIMARY KEY,
-    blog_id INT REFERENCES blog(id),
-    post_content JSON,
-    created_at TIMESTAMPTZ DEFAULT NOW()
-  );
-`;
-
   try {
     await database.query(createBlogTableQuery);
-    await database.query(createPostsTableQuery);
 
-    console.log("Tables created successfully");
+    console.log("Blog table created successfully");
 
     return NextResponse.json(
       {
-        response: "tables created",
+        response: "table created",
       },
       {
         status: 200,
@@ -44,3 +34,4 @@ export async function GET(req: NextRequest, res: NextResponse) {
     );
   }
 }
+

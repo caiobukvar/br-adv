@@ -1,29 +1,24 @@
 import { NextRequest, NextResponse } from "next/server";
-import database from "infra/database.js";
+import database from "infra/database";
 
 export async function GET(req: NextRequest, res: NextResponse) {
-  const result = await database.query("SELECT 1 + 1 as sum;");
+  const updatedAt = new Date().toISOString();
 
-  try {
-    console.log(
-      `Database ${process.env.POSTGRES_DB} está conectado na porta ${process.env.POSTGRES_PORT}`,
-    );
+  // query especifica do postgres (SHOW) para pegar dados do servidor
+  const dbVersionResult = await database.query("SHOW server_version;");
+  const dbVersionValue = dbVersionResult.rows[0].server_version;
 
-    console.log("Resposta da query:", result.rows);
-
-    return NextResponse.json(
-      { valor: result },
-      {
-        status: 200,
+  return NextResponse.json(
+    {
+      updated_at: updatedAt,
+      dependencies: {
+        database: {
+          version: dbVersionValue,
+        },
       },
-    );
-  } catch (error) {
-    console.log("Database não está conectado.");
-    return NextResponse.json(
-      { error: "ERROR" },
-      {
-        status: 400,
-      },
-    );
-  }
+    },
+    {
+      status: 200,
+    },
+  );
 }
