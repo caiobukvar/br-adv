@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import database from "infra/database.js";
 
+// ! acessar /api/v1/migrations para criar a tabela (provisório)
 export async function GET(req: NextRequest, res: NextResponse) {
   const createBlogTableQuery = `
   CREATE TABLE IF NOT EXISTS blog (
@@ -34,4 +35,3 @@ export async function GET(req: NextRequest, res: NextResponse) {
     );
   }
 }
-
