@@ -1,5 +1,5 @@
 version: "1.0"
-name: br-adv
+name: db_br_adv
 services:
   database:
     image: "postgres:16.0-alpine3.18"
