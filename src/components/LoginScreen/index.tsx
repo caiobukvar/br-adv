@@ -1,38 +1,28 @@
-import {
-  Button,
-  FormControl,
-  FormErrorMessage,
-  FormLabel,
-  Heading,
-  Input,
-  VStack,
-} from "@chakra-ui/react";
+import { Button, Heading, VStack } from "@chakra-ui/react";
+import { LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
+import styles from "./styles.module.css";
 
 export default function LoginScreen() {
   return (
     <VStack
-      p={10}
+      p={20}
       alignItems="center"
-      justifyContent="space-between"
-      borderRadius={7}
+      justifyContent="center"
+      alignSelf="center"
+      spacing={10}
       backgroundColor="#1c244b"
       color="#fff"
+      borderRadius={[0, 0, 0, 7]}
     >
-      <Heading marginBottom={5}>Login</Heading>
-
-      <FormControl>
-        <FormLabel fontWeight="bold">Nome de usuário</FormLabel>
-        <Input placeholder="Insira seu nome de usuário" name="username" />
-        <FormErrorMessage>Erro</FormErrorMessage>
-      </FormControl>
-
-      <FormControl>
-        <FormLabel fontWeight="bold">Senha</FormLabel>
-        <Input placeholder="Insira sua senha" name="password" />
-        <FormErrorMessage>Erro</FormErrorMessage>
-      </FormControl>
-
-      <Button marginTop={5}>Entrar</Button>
+      <Heading textAlign="center">
+        Para visualizar o dashboard, favor realize login
+      </Heading>
+      <LoginLink
+        className={styles.login}
+        postLoginRedirectURL="/dashboard/admin"
+      >
+        Entrar
+      </LoginLink>
     </VStack>
   );
 }

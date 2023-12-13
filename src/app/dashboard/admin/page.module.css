@@ -1,0 +1,39 @@
+.main {
+  min-height: calc(100vh - 310px);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  min-height: calc(100vh - 310px);
+  padding: 20px;
+  align-items: center;
+}
+
+.login,
+.logout {
+  padding: 10px;
+  border-radius: 7px;
+  min-width: 100px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.login {
+  background-color: #25d366;
+}
+
+.login:hover {
+  background-color: rgba(37, 211, 102, 0.7);
+}
+
+.logout {
+  background-color: #1c244b;
+  border: 1px solid #1c244b;
+  color: #fff;
+}
+.logout:hover {
+  background-color: rgba(28, 36, 75, 0.7);
+  border: 1px solid rgba(28, 36, 75, 0.7);
+}
