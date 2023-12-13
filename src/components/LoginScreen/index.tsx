@@ -15,7 +15,6 @@ export default function LoginScreen() {
       alignItems="center"
       justifyContent="space-between"
       borderRadius={7}
-      border="1px solid black"
       backgroundColor="#1c244b"
       color="#fff"
     >
