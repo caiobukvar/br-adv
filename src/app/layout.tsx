@@ -8,6 +8,7 @@ import FloatingContact from "@/components/FloatingContact";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import NavbarMobile from "@/components/NavbarMobile";
+import { headers } from "next/headers";
 
 const inter = Inter({ subsets: ["latin"] });
 
