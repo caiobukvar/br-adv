@@ -8,7 +8,7 @@ const getData = async () => {
   return response;
 };
 
-const Page = async () => {
+const Blog = async () => {
   const posts = await getData();
 
   return (
@@ -21,6 +21,6 @@ const Page = async () => {
       </div>
     </main>
   );
-}
+};
 
-export default Page;
+export default Blog;
