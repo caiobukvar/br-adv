@@ -6,6 +6,7 @@ import { Chakra } from "../components/Chakra";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import NavbarMobile from "@/components/NavbarMobile";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,6 +28,7 @@ export default function RootLayout({
           <Navbar />
           <NavbarMobile />
           {children}
+          <SpeedInsights />
           <FloatingContact />
           <Footer />
           <Analytics />
