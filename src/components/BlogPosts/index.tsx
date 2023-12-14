@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Tooltip, VStack } from "@chakra-ui/react";
+import { Button, Tooltip, VStack } from "@chakra-ui/react";
 import { Wrap, WrapItem } from "@chakra-ui/react";
 
 import { type PostData } from "@/services/posts";
@@ -30,9 +30,9 @@ const BlogPosts: React.FC<Props> = ({ posts }) => {
         placement="auto"
         hasArrow
       >
-        <div className={styles.tooltipWrapper}>
+        <Button alignSelf="flex-end" colorScheme="blue">
           <LoginLink className={styles.login}>🔒 Dashboard</LoginLink>
-        </div>
+        </Button>
       </Tooltip>
 
       <Wrap className={styles.container} spacing={5}>
