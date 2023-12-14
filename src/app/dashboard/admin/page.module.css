@@ -30,10 +30,8 @@
 
 .logout {
   background-color: #1c244b;
-  border: 1px solid #1c244b;
   color: #fff;
 }
 .logout:hover {
   background-color: rgba(28, 36, 75, 0.7);
-  border: 1px solid rgba(28, 36, 75, 0.7);
 }

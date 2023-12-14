@@ -1,26 +1,27 @@
-import "./globals.css";
+import FloatingContact from "@/components/FloatingContact";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import NavbarMobile from "@/components/NavbarMobile";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Chakra } from "../components/Chakra";
-import Footer from "@/components/Footer";
-import FloatingContact from "@/components/FloatingContact";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import NavbarMobile from "@/components/NavbarMobile";
-import { headers } from "next/headers";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Bianca Rocha Advocacia",
   description: "Advocacia especializada e sob demanda",
 };
 
 export default function RootLayout({
   children,
+  isDashboardRoute,
 }: {
   children: React.ReactNode;
+  isDashboardRoute: boolean;
 }) {
   return (
     <html>
@@ -31,7 +32,7 @@ export default function RootLayout({
           {children}
           <SpeedInsights />
           <FloatingContact />
-          <Footer />
+          {!isDashboardRoute && <Footer />}
           <Analytics />
         </Chakra>
       </body>
