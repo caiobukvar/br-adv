@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { VStack } from "@chakra-ui/react";
+import { Tooltip, VStack } from "@chakra-ui/react";
 import { Wrap, WrapItem } from "@chakra-ui/react";
 
 import { type PostData } from "@/services/posts";
 
 import styles from "./styles.module.css";
+import { LoginLink } from "@kinde-oss/kinde-auth-nextjs";
 
 export const PostNotFound = () => {
   return (
@@ -22,21 +23,34 @@ type Props = {
 
 const BlogPosts: React.FC<Props> = ({ posts }) => {
   return (
-    <Wrap className={styles.container} spacing={5}>
-      {posts.map((post) => {
-        return (
-          <WrapItem key={post.id} className={styles.card}>
-            <VStack as="button" className={styles.card__container}>
-              <h1>{post.title}</h1>
-              <Link href={`/blog/${post.id}`}>Leia mais</Link>
-            </VStack>
-            <div className={styles.footer}>
-              <span>Data</span> - <span>Número de comentários</span>
-            </div>
-          </WrapItem>
-        );
-      })}
-    </Wrap>
+    <>
+      <Tooltip
+        label="Área restrita para administradores!"
+        aria-label="admin-only"
+        placement="auto"
+        hasArrow
+      >
+        <div className={styles.tooltipWrapper}>
+          <LoginLink className={styles.login}>🔒 Dashboard</LoginLink>
+        </div>
+      </Tooltip>
+
+      <Wrap className={styles.container} spacing={5}>
+        {posts.map((post) => {
+          return (
+            <WrapItem key={post.id} className={styles.card}>
+              <VStack as="button" className={styles.card__container}>
+                <h1>{post.title}</h1>
+                <Link href={`/blog/${post.id}`}>Leia mais</Link>
+              </VStack>
+              <div className={styles.footer}>
+                <span>Data</span> - <span>Número de comentários</span>
+              </div>
+            </WrapItem>
+          );
+        })}
+      </Wrap>
+    </>
   );
 };
 

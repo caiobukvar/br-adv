@@ -1,3 +1,15 @@
+.login {
+  align-self: flex-end;
+  padding: 10px;
+  background-color: lightblue;
+  border-radius: 7px;
+  font-weight: 600;
+}
+.login:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -51,4 +63,9 @@
   font-size: 0.8em;
   font-weight: 600;
   padding: 15px 30px;
+}
+
+.tooltipWrapper {
+  display: flex;
+  align-self: flex-end;
 }
