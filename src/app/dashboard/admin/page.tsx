@@ -1,5 +1,5 @@
 "use client";
-import { Button, Text, VStack } from "@chakra-ui/react";
+import { Button, Heading, Text, VStack } from "@chakra-ui/react";
 import styles from "./page.module.css";
 import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import { LoginLink, LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
@@ -19,7 +19,17 @@ const Admin = () => {
         justifyContent="center"
         spacing={10}
       >
-        <Text>Você está logado!</Text>
+        <Heading>Você está logado!</Heading>
+
+        {/* 
+        espaço deve conter:
+        - lista de post no blog
+        - criar novo post e salvar no db e já postar
+        - editar um post (?)
+        - deletar um post listado
+        - botão logout
+        */}
+
         <LogoutLink className={styles.logout}>Fazer logout</LogoutLink>
       </VStack>
     </main>

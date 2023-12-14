@@ -1,4 +1,4 @@
-import { Button, Heading, VStack } from "@chakra-ui/react";
+import { Heading, VStack } from "@chakra-ui/react";
 import { LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import styles from "./styles.module.css";
 
