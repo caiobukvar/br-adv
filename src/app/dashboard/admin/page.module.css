@@ -33,5 +33,5 @@
   color: #fff;
 }
 .logout:hover {
-  background-color: rgba(28, 36, 75, 0.7);
+  opacity: 0.7;
 }

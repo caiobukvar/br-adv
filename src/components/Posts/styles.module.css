@@ -2,8 +2,8 @@
   width: 100%;
 }
 .title:hover {
-  background-color: lightblue;
-  /* opacity: 0.8; */
+  outline: 2px solid rgba(111, 188, 240, 0.8);
+  background-color: rgba(150, 210, 250, 0.8);
 }
 
 .delete {
