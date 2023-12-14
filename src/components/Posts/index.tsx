@@ -1,13 +1,19 @@
 import {
+  Box,
   Button,
   Card,
   CardBody,
   CardFooter,
   CardHeader,
+  Center,
   HStack,
   Heading,
+  Icon,
   Text,
+  VStack,
 } from "@chakra-ui/react";
+import { FaTrash } from "react-icons/fa";
+import styles from "./styles.module.css";
 
 type Paragraph =
   | {
@@ -57,7 +63,14 @@ export default function Posts() {
             <CardHeader alignSelf="flex-start" w="100%">
               <HStack w="100%" justifyContent="space-between">
                 <Heading size="md">{post.title}</Heading>
-                <Button colorScheme="blue">Ver post</Button>
+                <HStack>
+                  <Button colorScheme="blue">Ver post</Button>
+                  <Box as="button" className={styles.delete}>
+                    <Center h="100%">
+                      <Icon as={FaTrash} size="32px" />
+                    </Center>
+                  </Box>
+                </HStack>
               </HStack>
             </CardHeader>
             <CardBody w="100%">
