@@ -59,7 +59,7 @@ export default function Posts() {
       {posts
         .filter((post) => post.active)
         .map((post) => (
-          <Card align="center" key={post.title} w="100%">
+          <Card as="button" key={post.title} className={styles.title}>
             <CardHeader alignSelf="flex-start" w="100%">
               <HStack w="100%" justifyContent="space-between">
                 <Heading size="md">{post.title}</Heading>
@@ -73,20 +73,9 @@ export default function Posts() {
                 </HStack>
               </HStack>
             </CardHeader>
-            <CardBody w="100%">
-              <HStack w="100%" justifyContent="space-between">
-                <Text color="black">
-                  {post.text.map((paragraph, index) => (
-                    <span key={index}>
-                      {Object.values(paragraph)[0]}
-                      <br />
-                    </span>
-                  ))}
-                </Text>
-              </HStack>
-            </CardBody>
           </Card>
         ))}
+      Paginação aqui
     </>
   );
 }

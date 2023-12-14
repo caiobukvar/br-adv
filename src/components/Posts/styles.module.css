@@ -1,3 +1,11 @@
+.title {
+  width: 100%;
+}
+.title:hover {
+  background-color: lightblue;
+  /* opacity: 0.8; */
+}
+
 .delete {
   height: 40px;
   width: 40px;

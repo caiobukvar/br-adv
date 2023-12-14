@@ -14,13 +14,7 @@ const Admin = () => {
   return isAuthenticated ? (
     <RootLayout isDashboardRoute={true}>
       <main className={styles.main}>
-        <VStack
-          w="100%"
-          alignItems="center"
-          p={10}
-          minH="calc(100vh - 310px)"
-          spacing={10}
-        >
+        <VStack w="100%" alignItems="center" p={10} minH="calc(100vh - 310px)">
           <HStack w="100%" justifyContent="flex-end">
             <Stack direction={["column", "column", "row", "row"]} spacing={5}>
               <Button
@@ -35,7 +29,6 @@ const Admin = () => {
               <LogoutLink className={styles.logout}>Fazer logout</LogoutLink>
             </Stack>
           </HStack>
-
           <Posts />
         </VStack>
       </main>
