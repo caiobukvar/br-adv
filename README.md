@@ -1,4 +1,4 @@
-# Bianca Rocha Advocacia
+# BR Advocacia
 
 ### A fully functional React/NextJS website made for lawyers, that can be customized as wished.
 

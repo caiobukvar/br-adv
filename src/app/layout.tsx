@@ -12,7 +12,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 const metadata: Metadata = {
-  title: "Bianca Rocha Advocacia",
+  title: "BR Advocacia",
   description: "Advocacia especializada e sob demanda",
 };
 

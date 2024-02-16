@@ -11,20 +11,20 @@ export default function Socials() {
   return (
     <div className={styles.socials}>
       {/* <Image src="" alt="logo" /> */}
-      <Link href="https://www.instagram.com/biancarocha.adv/" target="_blank">
+      <Link href="https://www.instagram.com/" target="_blank">
         <Icon as={AiOutlineInstagram} boxSize="24px" />
       </Link>
-      <Link href="https://bianca500.jusbrasil.com.br/" target="_blank">
+      <Link href="https://www.jusbrasil.com.br/" target="_blank">
         <Icon as={BsFillPersonFill} boxSize="24px" />
       </Link>
-      <Link href="https://www.linkedin.com/in/bianca-rochav/" target="_blank">
+      <Link href="https://www.linkedin.com/in/" target="_blank">
         <Icon as={BsLinkedin} boxSize="24px" />
       </Link>
-      <Link href="https://www.facebook.com/biancarochav.adv" target="_blank">
+      <Link href="https://www.facebook.com/" target="_blank">
         <Icon as={BsFacebook} boxSize="24px" />
       </Link>
       <Link
-        href="https://api.whatsapp.com/send?phone=5519999613496"
+        href="https://api.whatsapp.com/send?phone=5519999999999"
         target="_blank"
       >
         <Icon as={MdOutlineWhatsapp} boxSize="24px" />
