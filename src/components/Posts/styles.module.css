@@ -1,0 +1,17 @@
+.title {
+  width: 100%;
+}
+.title:hover {
+  outline: 2px solid rgba(111, 188, 240, 0.8);
+  background-color: rgba(150, 210, 250, 0.8);
+}
+
+.delete {
+  height: 40px;
+  width: 40px;
+  background-color: tomato;
+  border-radius: 7px;
+}
+.delete:hover {
+  opacity: 0.8;
+}

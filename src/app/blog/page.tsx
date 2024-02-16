@@ -2,13 +2,14 @@ import { getPosts } from "@/services/posts";
 import BlogPosts from "@/components/BlogPosts";
 
 import styles from "./page.module.css";
+import { LoginLink } from "@kinde-oss/kinde-auth-nextjs";
 
 const getData = async () => {
   const response = await getPosts();
   return response;
 };
 
-const Page = async () => {
+const Blog = async () => {
   const posts = await getData();
 
   return (
@@ -21,6 +22,6 @@ const Page = async () => {
       </div>
     </main>
   );
-}
+};
 
-export default Page;
+export default Blog;

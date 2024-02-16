@@ -9,12 +9,12 @@ const resources = {
         header: "Escritório de advocacia BR",
         title: "DIREITO IMOBILIÁRIO",
         saiba_mais: "Saiba mais",
-        s2_title: "Dra. Bianca Rocha",
-        s2_subtitle: "Uma advogada apaixonada pela profissão.",
+        s2_title: "Dr. Bkvr",
+        s2_subtitle: "Um advogado apaixonado pela profissão.",
         s2_text: "Atuo com o mercado imobiliário de forma especializada.",
         s2_text2:
           "Me especializei em toda a parte jurídica que envolve os imóveis, principalmente em contratos e incorporação imobiliária.",
-        s2_button: "Quem é a Dra. Bianca Rocha",
+        s2_button: "Quem é o Dr. Bkvr",
       },
       areas: {
         s3_title: "NOSSAS ÁREAS DE ATUAÇÃO",
@@ -33,20 +33,20 @@ const resources = {
         title: "Assessoria de idiomas",
       },
       about: {
-        title: "Dra. Bianca Rocha",
+        title: "Dr. Bkvr",
         text: "Especialista em Direito Imobiliário.",
-        text2: "Sou uma advogada apaixonada pela profissão.",
+        text2: "Sou um advogado apaixonado pela profissão.",
         text3: "Atuo com o mercado imobiliário de forma especializada.",
         text4:
           "Me especializei em toda a parte jurídica envolvendo imóveis, principalmente em contratos e incorporação imobiliária.",
         text5:
-          "Me formei pela Universiade Salesiana de São Paulo, com pós em Direito Imobiliário, com diversos cursos de extensão jurídicos.",
+          "Me formei pela Universiade de São Paulo, com pós em Direito Imobiliário, com diversos cursos de extensão jurídicos.",
         text6:
           "Tive o privilégio de trabalhar internacionalmente como estagiária na Organização dos Estados Americanos e ONU-CEPAL.",
         text7:
-          "Sou sócia-propietária do escritório Bianca Rocha Advocacia, em Hortolândia/SP, com atuação em todo o Brasil.",
+          "Sou sócio-propietário do escritório BR Advocacia, com atuação em todo o Brasil.",
         content_title: "Conheça meus canais de conteúdo:",
-        s2_title: "Práticas de Bianca Rocha Advocacia",
+        s2_title: "Práticas de BR Advocacia",
         s2_text:
           "Nossos advogados dedicados trazem uma abordagem única para todos os casos. Hoje, trabalhamos com uma série de regulamentos e requisistos. Confira nossas áreas de especialização e ligue para falar sobre suas questões legais hoje mesmo!",
       },
@@ -75,12 +75,12 @@ const resources = {
         header: "BR Law Firm",
         title: "REAL ESTATE LAW",
         saiba_mais: "Learn more",
-        s2_title: "Dr. Bianca Rocha",
+        s2_title: "Dr. Bkvr",
         s2_subtitle: "A lawyer passionate about her profession.",
         s2_text: "I work with the real estate market in a specialized way.",
         s2_text2:
           "I specialized in all legal aspects involving real estate, mainly in contracts and real estate development.",
-        s2_button: "Who Is Doctor Bianca Rocha",
+        s2_button: "Who Is Doctor Bkvr",
       },
       areas: {
         s3_title: "OUR AREAS OF ACTIVITY",
@@ -99,7 +99,7 @@ const resources = {
         title: "LANGUAGE ADVISORY",
       },
       about: {
-        title: "Dr. Bianca Rocha",
+        title: "Dr. Bkvr",
         text: "Specialist in Real Estate Law.",
         text2: "I am a lawyer passionate about the profession.",
         text3: "I work with the real estate market in a specialized way.",
@@ -110,9 +110,9 @@ const resources = {
         text6:
           "Had the privilege of working internationally as an intern at the Organization of American States and UN-ECLAC.",
         text7:
-          "Co-owner of the Bianca Rocha Advocacia office in the city of Hortolândia/SP with operations throughout Brazil.",
+          "Co-owner of the BR Advocacia office in the city of Hortolândia/SP with operations throughout Brazil.",
         content_title: "Discover my content channels:",
-        s2_title: "Practices of Bianca Rocha Advocacia",
+        s2_title: "Practices of BR Advocacia",
         s2_text:
           "Our dedicated lawyers bring a unique approach to every case. Today, we work with a series of regulations and requirements. Check out our areas of expertise and call us to discuss your legal questions today.",
       },
@@ -141,13 +141,13 @@ const resources = {
         header: "Bureau d'avocat BR",
         title: "DROIT IMMOBILIER",
         saiba_mais: "Savoir plus",
-        s2_title: "Dr. Bianca Rocha",
+        s2_title: "Dr. Bkvr",
         s2_subtitle: "Une avocate passionnée par son métier.",
         s2_text:
           "Je travaille avec le marché immobilier de manière spécialisée.",
         s2_text2:
           "Je me suis spécialisé dans tous les aspects juridiques liés à l'immobilier, principalement dans les contrats et la promotion immobilière.",
-        s2_button: "Qui est le docteur Bianca Rocha",
+        s2_button: "Qui est le docteur Bkvr",
       },
       areas: {
         s3_title: "NOS DOMAINES D'ACTIVITÉ",
@@ -166,7 +166,7 @@ const resources = {
         title: "CONSEIL LINGUISTIQUE",
       },
       about: {
-        title: "Dr Bianca Rocha",
+        title: "Dr Bkvr",
         text: "Spécialiste en droit immobilier.",
         text2: "Un avocat passionné par le métier.",
         text3: "Je travaille avec le marché immobilier de manière spécialisée",
@@ -177,9 +177,9 @@ const resources = {
         text6:
           "J'ai eu le privilège de travailler à l'échelle internationale en tant que stagiaire à l'Organisation des États américains et à la CEPALC.",
         text7:
-          "Copropriétaire du bureau de Bianca Rocha Advocacia dans la ville d'Hortolândia/SP avec des opérations dans tout le Brésil.",
+          "Copropriétaire du bureau de BR Advocacia dans la ville d'Hortolândia/SP avec des opérations dans tout le Brésil.",
         content_title: "Découvrez mes chaînes de contenu:",
-        s2_title: "Pratiques de Bianca Rocha Advocacia",
+        s2_title: "Pratiques de BR Advocacia",
         s2_text:
           "Nos avocats dévoués apportent une approche unique à chaque cas. Aujourd’hui, nous travaillons avec une série de réglementations et d’exigences. Découvrez nos domaines d’expertise et appelez-nous dès aujourd’hui pour discuter de vos questions juridiques.",
       },
@@ -208,12 +208,12 @@ const resources = {
         header: "BR Kanzlei",
         title: "EIGENTUMSRECHT",
         saiba_mais: "Mehr lesen",
-        s2_title: "Bianca Rocha",
+        s2_title: "Bkvr",
         s2_subtitle: "Eine Anwältin, die ihren Beruf mit Leidenschaft ausübt.",
         s2_text: "Ich arbeite spezialisiert auf den Immobilienmarkt.",
         s2_text2:
           "Ich habe mich auf alle rechtlichen Aspekte im Zusammenhang mit Immobilien spezialisiert, hauptsächlich auf Verträge und Immobilienentwicklung.",
-        s2_button: "Wer ist Doktor Bianca Rocha",
+        s2_button: "Wer ist Doktor Bkvr",
       },
       areas: {
         s3_title: "UNSERE TÄTIGKEITSBEREICHE",
@@ -232,7 +232,7 @@ const resources = {
         title: "SPRACHBERATUNG",
       },
       about: {
-        title: "Bianca Rocha",
+        title: "Bkvr",
         text: "Spezialist für Immobilienrecht.",
         text2: "Ich bin Anwalt mit Leidenschaft für meinen Beruf.",
         text3: "Arbeite spezialisiert auf den Immobilienmarkt.",
@@ -243,9 +243,9 @@ const resources = {
         text6:
           "Ich hatte das Privileg, als Praktikant bei der Organisation Amerikanischer Staaten und der UN-ECLAC international zu arbeiten l'Organisation des États américains et à la CEPALC</strong>.",
         text7:
-          "Miteigentümerin des Büros von Bianca Rocha Advocacia in der Stadt Hortolândia/SP mit Niederlassungen in ganz Brasilien.",
+          "Miteigentümerin des Büros von BR Advocacia in der Stadt Hortolândia/SP mit Niederlassungen in ganz Brasilien.",
         content_title: "Entdecken Sie meine Content-Kanäle:",
-        s2_title: "Praktiken von Bianca Rocha Advocacia",
+        s2_title: "Praktiken von BR Advocacia",
         s2_text:
           "Unsere engagierten Anwälte verfolgen bei jedem Fall einen einzigartigen Ansatz. Heute arbeiten wir mit einer Reihe von Vorschriften und Anforderungen. Informieren Sie sich über unsere Fachgebiete und rufen Sie uns noch heute an, um Ihre rechtlichen Fragen zu besprechen.",
       },
@@ -274,12 +274,12 @@ const resources = {
         header: "OFICINA DE ABOGADOS BR",
         title: "DERECHO INMOBILIARIO",
         saiba_mais: "Sepa mas",
-        s2_title: "Dra. Bianca Rocha",
+        s2_title: "Dra. Bkvr",
         s2_subtitle: "Una abogada apasionada por su profesión.",
         s2_text: "Trabajo con el mercado inmobiliario de forma especializada.",
         s2_text2:
           "Me especialicé en todos los aspectos jurídicos relacionados con el sector inmobiliario, principalmente en contratos y desarrollo inmobiliario.",
-        s2_button: "¿Quién es la doctora Bianca Rocha",
+        s2_button: "¿Quién es la doctora Bkvr",
       },
       areas: {
         s3_title: "NUESTRAS ÁREAS DE ACTIVIDAD",
@@ -298,7 +298,7 @@ const resources = {
         title: "ASESORAMIENTO DE IDIOMAS",
       },
       about: {
-        title: "Dra. Bianca Rocha",
+        title: "Dra. Bkvr",
         text: "Especialista en Derecho Inmobiliario.",
         text2: "Abogada apasionada por la profesión.",
         text3: "Trabajo con el mercado inmobiliario de forma especializada.",
@@ -309,9 +309,9 @@ const resources = {
         text6:
           "Tuve el privilegio de trabajar internacionalmente como pasante en la Organización de Estados Americanos y ONU-CEPAL.",
         text7:
-          "Copropietaria de la oficina de Bianca Rocha Advocacia en la ciudad de Hortolândia/SP con operaciones en todo Brasil.",
+          "Copropietaria de la oficina de BR Advocacia en la ciudad de Hortolândia/SP con operaciones en todo Brasil.",
         content_title: "Descubre mis canales de contenido:",
-        s2_title: "Prácticas de Bianca Rocha Advocacia",
+        s2_title: "Prácticas de BR Advocacia",
         s2_text:
           "Nuestros dedicados abogados aportan un enfoque único a cada caso. Hoy en día trabajamos con una serie de normativas y requisitos. Consulte nuestras áreas de especialización y llámenos hoy para discutir sus preguntas legales.",
       },
