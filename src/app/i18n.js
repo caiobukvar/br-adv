@@ -6,7 +6,7 @@ const resources = {
   pt: {
     translation: {
       home: {
-        header: "Escritório de advocacia BKVR",
+        header: "Escritório de advocacia BR",
         title: "DIREITO IMOBILIÁRIO",
         saiba_mais: "Saiba mais",
         s2_title: "Dr. Bkvr",
@@ -72,7 +72,7 @@ const resources = {
   en: {
     translation: {
       home: {
-        header: "Bkvr Law Firm",
+        header: "BR Law Firm",
         title: "REAL ESTATE LAW",
         saiba_mais: "Learn more",
         s2_title: "Dr. Bkvr",
@@ -138,7 +138,7 @@ const resources = {
   fr: {
     translation: {
       home: {
-        header: "Bureau d'avocat Bkvr",
+        header: "Bureau d'avocat BR",
         title: "DROIT IMMOBILIER",
         saiba_mais: "Savoir plus",
         s2_title: "Dr. Bkvr",
@@ -205,7 +205,7 @@ const resources = {
   de: {
     translation: {
       home: {
-        header: "Bkvr Kanzlei",
+        header: "BR Kanzlei",
         title: "EIGENTUMSRECHT",
         saiba_mais: "Mehr lesen",
         s2_title: "Bkvr",
@@ -271,7 +271,7 @@ const resources = {
   es: {
     translation: {
       home: {
-        header: "OFICINA DE ABOGADOS Bkvr",
+        header: "OFICINA DE ABOGADOS BR",
         title: "DERECHO INMOBILIARIO",
         saiba_mais: "Sepa mas",
         s2_title: "Dra. Bkvr",
