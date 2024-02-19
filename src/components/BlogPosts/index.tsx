@@ -7,7 +7,7 @@ import { Wrap, WrapItem } from "@chakra-ui/react";
 import { type PostData } from "@/services/posts";
 
 import styles from "./styles.module.css";
-import { LoginLink } from "@kinde-oss/kinde-auth-nextjs";
+// import { LoginLink } from "@kinde-oss/kinde-auth-nextjs";
 
 export const PostNotFound = () => {
   return (
@@ -24,7 +24,7 @@ type Props = {
 const BlogPosts: React.FC<Props> = ({ posts }) => {
   return (
     <>
-      <Tooltip
+      {/* <Tooltip
         label="Área restrita para administradores!"
         aria-label="admin-only"
         placement="auto"
@@ -33,7 +33,7 @@ const BlogPosts: React.FC<Props> = ({ posts }) => {
         <Button alignSelf="flex-end" colorScheme="blue">
           <LoginLink className={styles.login}>🔒 Dashboard</LoginLink>
         </Button>
-      </Tooltip>
+      </Tooltip> */}
 
       <Wrap className={styles.container} spacing={5}>
         {posts.map((post) => {
