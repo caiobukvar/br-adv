@@ -1,5 +1,4 @@
 import FloatingContact from "@/components/FloatingContact";
-import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import NavbarMobile from "@/components/NavbarMobile";
 import { Analytics } from "@vercel/analytics/react";
@@ -18,7 +17,6 @@ const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  isDashboardRoute,
 }: {
   children: React.ReactNode;
   isDashboardRoute: boolean;
@@ -30,10 +28,7 @@ export default function RootLayout({
           <Navbar />
           <NavbarMobile />
           {children}
-          <SpeedInsights />
           <FloatingContact />
-          {!isDashboardRoute && <Footer />}
-          <Analytics />
         </Chakra>
       </body>
     </html>
