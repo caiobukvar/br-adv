@@ -1,16 +1,16 @@
-import { NextResponse } from "next/server";
-import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
+// import { NextResponse } from "next/server";
+// import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 
-export async function GET() {
-  const { getUser, isAuthenticated } = getKindeServerSession();
+// export async function GET() {
+//   const { getUser, isAuthenticated } = getKindeServerSession();
 
-  const isLogged = await isAuthenticated();
+//   const isLogged = await isAuthenticated();
 
-  if (!isLogged) {
-    return new Response("Unauthorized", { status: 401 });
-  }
-  const user = await getUser();
-  const data = { message: "Hello User", id: user.id };
+//   if (!isLogged) {
+//     return new Response("Unauthorized", { status: 401 });
+//   }
+//   const user = await getUser();
+//   const data = { message: "Hello User", id: user.id };
 
-  return NextResponse.json({ data });
-}
+//   return NextResponse.json({ data });
+// }
