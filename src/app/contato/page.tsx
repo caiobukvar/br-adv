@@ -202,7 +202,7 @@ export default function Contato() {
         className={styles.contact}
         spacing={10}
       >
-        <p>{t("contact.service")}: +55 (19) 9 9961.3496 </p>
+        <p>{t("contact.service")}: +99 (99) 9 9999.9999 </p>
       </Stack>
       <Maps />
       <br />
