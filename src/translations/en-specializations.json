@@ -12,7 +12,7 @@
       "Adverse possession"
     ],
     "img": "/work-area-cards/direito-imobiliario.jpg",
-    "link": "https://api.whatsapp.com/send/?phone=5519999613496&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+direito+imobili%C3%A1rio&type=phone_number&app_absent=0"
+    "link": "https://api.whatsapp.com/send/?phone=&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+direito+imobili%C3%A1rio&type=phone_number&app_absent=0"
   },
   {
     "id": 2,
@@ -28,7 +28,7 @@
       "Will and inventories"
     ],
     "img": "/work-area-cards/direito-de-familia.jpg",
-    "link": "https://api.whatsapp.com/send/?phone=5519999613496&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+direito+de+fam%C3%ADlia&type=phone_number&app_absent=0"
+    "link": "https://api.whatsapp.com/send/?phone=&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+direito+de+fam%C3%ADlia&type=phone_number&app_absent=0"
   },
   {
     "id": 3,
@@ -39,7 +39,7 @@
       "Action for recovery of undue debt"
     ],
     "img": "/work-area-cards/direito-tributario.png",
-    "link": "https://api.whatsapp.com/send/?phone=5519999613496&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+direito+tribut%C3%A1rio&type=phone_number&app_absent=0"
+    "link": "https://api.whatsapp.com/send/?phone=&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+direito+tribut%C3%A1rio&type=phone_number&app_absent=0"
   },
   {
     "id": 4,
@@ -50,13 +50,13 @@
       "Preparation of code of conduct and implementation of corporate compliance"
     ],
     "img": "/work-area-cards/direito-empresarial.jpg",
-    "link": "https://api.whatsapp.com/send/?phone=5519999613496&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+direito+empresarial%2Fcorporativo&type=phone_number&app_absent=0"
+    "link": "https://api.whatsapp.com/send/?phone=&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+direito+empresarial%2Fcorporativo&type=phone_number&app_absent=0"
   },
   {
     "id": 5,
     "title": "OTHER AREAS OF THE LAW:",
     "items": ["Civil Laws", "Criminal Laws", "Labor Laws"],
     "img": "/work-area-cards/outras-areas.jpg",
-    "link": "https://api.whatsapp.com/send/?phone=5519999613496&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+outras+%C3%A1reas+do+direito&type=phone_number&app_absent=0"
+    "link": "https://api.whatsapp.com/send/?phone=&text=Gostaria+de+maiores+informa%C3%A7%C3%B5es+sobre+outras+%C3%A1reas+do+direito&type=phone_number&app_absent=0"
   }
 ]
